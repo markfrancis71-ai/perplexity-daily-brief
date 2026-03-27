@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Brief &mdash; March 27, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">Daily Brief</a>
+    <nav class="nav" id="nav">
+      <a href="#schedule">Schedule</a>
+      <a href="#meeting-prep">Prep</a>
+      <a href="#tasks">Tasks</a>
+      <a href="#review">Review</a>
+      <a href="#tech">Tech</a>
+      <a href="#insuretech">InsureTech</a>
+      <a href="#history">History</a>
+    </nav>
+    <div class="header-actions">
+      <button data-theme-toggle aria-label="Toggle theme" class="icon-btn">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#schedule">Schedule</a>
+    <a href="#meeting-prep">Prep</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#review">Review</a>
+    <a href="#tech">Tech</a>
+    <a href="#insuretech">InsureTech</a>
+    <a href="#history">History</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="overline" id="heroDate">Friday, March 27, 2026</span>
+    <h1 id="heroGreeting">Good Morning, Mark.</h1>
+    <p class="hero-sub" id="heroSub">4 meetings &middot; 0 tasks &middot; Light schedule today</p>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section" id="schedule">
+  <div class="container">
+    <div class="section-label-row">
+      <h2 class="section-label">Schedule</h2>
+      <div class="sched-actions">
+        <span class="sched-updated" id="schedUpdated"></span>
+        <button class="refresh-btn" id="refreshCalBtn" title="Refresh calendar">
+          <svg class="refresh-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="advice-bar">
+      <strong>Day Management:</strong> You have <span style="color:var(--red);font-weight:600">back-to-back meetings 4:00 AM&ndash;8:00 AM</span> &mdash; 2 meetings with no buffer between sessions. Use the <strong>15-min gap</strong> after Introduction to Enterprise Architecture Overview w/ Ian B... (3:45 AM) to prepare for <strong>P&amp;S Final review by Core Team</strong>. Prioritize <strong>P&amp;S Final review by Core Team</strong> (4:00 AM) &mdash; review the meeting prep notes below before attending.
+    </div>
+    <div id="schedule-container">
+      <div class="tasks-loading"><p class="task-meta">Loading schedule...</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEETING PREP -->
+<section class="section section-muted" id="meeting-prep">
+  <div class="container">
+    <h2 class="section-label">Meeting Prep</h2>
+    <div id="meeting-prep-container">
+      <div class="tasks-loading"><p class="task-meta">Loading meeting prep...</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TASKS -->
+<section class="section" id="tasks">
+  <div class="container">
+    <div class="section-label-row">
+      <h2 class="section-label">Tasks</h2>
+      <div class="pill-group">
+        <button class="pill active" data-sort="date">Due Date</button>
+        <button class="pill" data-sort="newest">Newest</button>
+      </div>
+    </div>
+    <div id="tasks-container">
+      <div class="tasks-loading">
+        <p class="task-meta">Loading tasks...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YESTERDAY IN REVIEW -->
+<section class="section section-muted" id="review">
+  <div class="container">
+    <h2 class="section-label">Yesterday in Review</h2>
+    <p class="review-subtitle">3 key meetings from Thursday, March 26</p>
+
+    <!-- Meeting 1: Weekly Staff 3/26 -->
+    <details class="review-card" open>
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>Weekly Staff 3/26</h3>
+          <span class="review-meta">Mark, Jeff, Dan, Phil Stackhouse, Aaron, Ryan, Rebecca, Sihuas, Chuck &middot; March 26, 2026</span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Mark led a wide-ranging architecture and strategy discussion covering a ServiceNow demo with executive leadership where he expressed strong skepticism about a proposed $38M, 3-year contract, arguing the solution is essentially a visualization layer over existing Snowflake data and recommending a $5M internal build instead. The session also addressed critical legacy system deadlines—WebSphere stacks face a March 31st hard deadline—and a controversial GuideWire &#x27;O2 Strategy&#x27; proposal to reverse-convert policies back to legacy systems. Additional topics included the USAA tech strategy hiatus pending Dan&#x27;s input, AI COE centralization concerns, and the need for decentralized agentic tooling guardrails.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Follow up with Jeff to propose an internal build-out of visualization/process tools (Tiger Teams) as an alternative to the $38M ServiceNow proposal, framing savings as a &#x27;slush fund&#x27; redirect.</span>
+            <button class="add-task-btn" data-task-title="ServiceNow Alternative Pitch to Jeff" data-task-notes="Propose internal build using Beam or C3I tools. Suggest redirecting a fraction of the $40M saved to internal Tiger Teams. Follow up on the &#x27;slush fund&#x27; concept discussed in weekly staff meeting 3/26.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Meet with Phil Stackhouse&#x27;s team to discuss bundling WebSphere risk exceptions by portfolio before the March 31st hard deadline.</span>
+            <button class="add-task-btn" data-task-title="WebSphere Risk Exceptions - Phil Stackhouse" data-task-notes="March 31st is the hard deadline for WebSphere stacks to be marked as &#x27;denied&#x27; (red status). Need a proactive plan to bundle the ~350 affected apps by portfolio rather than handling one by one. Schedule with Phil Stackhouse&#x27;s team ASAP.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Continue meetings with Aaron regarding the GuideWire &#x27;O2 Strategy&#x27; reverse conversion plan for legacy policies.</span>
+            <button class="add-task-btn" data-task-title="GuideWire O2 Strategy Review with Aaron" data-task-notes="Proposal to reverse-convert policies from GuideWire back to legacy systems due to vendor rate-matching issues for specific company codes. Mark finds this counter-intuitive and needs continued review meetings with Aaron.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Forward the 28 Texting/SMS executive meeting invite (scheduled Friday at 11 AM) to James if Mark cannot attend.</span>
+            <button class="add-task-btn" data-task-title="Forward SMS/Texting Meeting to James" data-task-notes="Executive meeting on 28 Texting/SMS scheduled for Friday at 11 AM. If Mark cannot attend, forward invite to James. From Weekly Staff 3/26 actions.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Follow up with Ryan to confirm Mark will not sign off on downstream billing/FinPal approaches without signed affidavits from partners regarding manual work.</span>
+            <button class="add-task-btn" data-task-title="Downstream Billing Accountability - Ryan Follow-up" data-task-notes="Reiterate to Ryan that Mark requires signed affidavits from downstream partners committing to no manual work before signing off on billing/FinPal integration approaches.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Re-establish a one-on-one meeting with Sihuas (via Rebecca) to discuss agentic tooling guardrails and scaling automation beyond the AI COE.</span>
+            <button class="add-task-btn" data-task-title="1:1 with Sihuas - Agentic Tooling Guardrails" data-task-notes="Schedule via Rebecca. Topic: decentralized guardrails for agentic tooling so developers can automate without every use case requiring formal AI COE (Chuck&#x27;s team) review. Addresses scalability concerns raised in weekly staff 3/26.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Refresh the architect engagement slide/org chart to show current coverage gaps and TPM assignments for new leadership (Dan).</span>
+            <button class="add-task-btn" data-task-title="Update Architect Engagement Slide" data-task-notes="Refresh existing org chart/engagement slide to reflect current architect coverage gaps and TPM assignments. Purpose: help new leadership (Dan) understand EA&#x27;s value in delivery and solutioning beyond governance.">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 2: ServiceNow Demo - Leaders 3/26 -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>ServiceNow Demo - Leaders 3/26</h3>
+          <span class="review-meta">Mark, Jeff, Gloria, leadership team (USAA P&amp;C) &middot; March 26, 2026</span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>A 15-minute POC demo was presented for a ServiceNow-based Claims Payment visibility platform built over eight weeks, aiming to reduce Mean Time to Resolution (MTTR) for insurance claim payments by 45% (from 4 hours to 2.2 hours) using Kafka-based data ingestion, AI summarization, and an executive Payment Health Dashboard. Mark and leadership raised significant concerns about integration assumptions for non-Kafka systems, the accuracy of the 4-hour resolution baseline, and the gap between what the POC proved (EFT/Guidewire only) versus its implied broader scope. The session concluded with agreement to regroup and compare the solution against existing internal capabilities before any long-term commitment.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Cross-reference the &#x27;4-hour&#x27; resolution assumption used in the ServiceNow POC business case with internal P&amp;C metrics to validate whether it is truly &#x27;ultra-conservative.&#x27;</span>
+            <button class="add-task-btn" data-task-title="Validate 4-Hour MTTR Baseline" data-task-notes="The ServiceNow POC business case assumes a 4-hour resolution time reduced to 2.2 hours (45% improvement). Need to verify this baseline against actual internal P&amp;C payment resolution metrics. Does it apply to payments, outages, or both?">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Monitor the outcome of the Kafka/Architecture follow-up meeting with Jeff and the executive team to ensure alignment with P&amp;C architecture goals.</span>
+            <button class="add-task-btn" data-task-title="Follow Up on Kafka Architecture Meeting" data-task-notes="A Target State Architecture meeting was scheduled for later on 3/26 to discuss authentication methods and Kafka integration target state. Track the outcomes and ensure P&amp;C architecture alignment.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Jointly align on a document that explicitly states what was proven in the POC (Kafka/EFT payments) versus what is &#x27;supported but not in scope&#x27; (APIs, FedEx tracking, vendor invoices).</span>
+            <button class="add-task-btn" data-task-title="Clarify ServiceNow POC Scope Document" data-task-notes="Create or co-author a scope alignment document distinguishing what the 8-week POC actually proved (EFT/Guidewire via Kafka) from capabilities implied but not demonstrated (non-Kafka APIs, external vendor tracking, invoice payments).">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Conduct a follow-up technical deep dive session to examine how the ServiceNow POC integration was built for scale and configurability.</span>
+            <button class="add-task-btn" data-task-title="ServiceNow POC Technical Deep Dive" data-task-notes="Schedule a session to &#x27;peek under the hood&#x27; at the POC integration architecture—specifically how Stream Connect, the Insurance Data Model, and Playbooks are configured for scale and whether non-functional requirements have been addressed.">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 3: Jonathan 3/26 -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>Jonathan 3/26</h3>
+          <span class="review-meta">Mark, Jonathan, Tim Riley, Osterkamp, Deepak, Vicki Shapiro, Fernandez &middot; March 26, 2026</span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Mark and Jonathan discussed the strategic and technical progression of the &#x27;Architecture as Code&#x27; initiative, focusing on a knowledge domain framework with four components (Schemas, Glossaries, Concept Maps, and Policies) and the potential use of Backstage as an open-source implementation starter kit. A significant portion of the conversation addressed the &#x27;storytelling&#x27; challenge—translating technical EA concepts into business value narratives to gain leadership buy-in from Osterkamp and Deepak. Organizational alignment topics included EPMO blueprint investments, Tim Riley&#x27;s tiger team formation, and a discrepancy around &#x27;Air Triage&#x27; with a deadline of April 14th.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Finalize the concept map relationship definitions (semantics) within the &#x27;Architecture as Code&#x27; framework before moving to the prototyping phase.</span>
+            <button class="add-task-btn" data-task-title="Finalize Architecture as Code Concept Maps" data-task-notes="Complete the &#x27;beating up&#x27; of concept maps to ensure all relationships between architectural elements are accurately defined. This is the prerequisite before prototyping begins. From Jonathan 3/26 priority actions.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Create the skeleton of the Information Architecture (IA) domain for Vicki Shapiro to begin populating with business entities.</span>
+            <button class="add-task-btn" data-task-title="Build IA Domain Skeleton for Vicki Shapiro" data-task-notes="Create the structural skeleton of the Information Architecture knowledge domain. Hand off to Vicki Shapiro for population with business entities. Part of the Architecture as Code initiative discussed with Jonathan on 3/26.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Translate technical Architecture as Code milestones into human-readable &#x27;I need the ability to&#x27; capability statements for leadership socialization with Dan, Osterkamp, and Deepak.</span>
+            <button class="add-task-btn" data-task-title="Draft EA Capability Statements for Leadership" data-task-notes="Create &#x27;I need the ability to...&#x27; statements (e.g., &#x27;I need the ability to chat with my architecture&#x27;) to communicate EA&#x27;s value in business terms. Target audiences: Dan (new leadership), Osterkamp and Deepak teams.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Reconcile the &#x27;Air Triage&#x27; inputs for the EPMO blueprint investment process by the April 14th deadline mentioned by Fernandez.</span>
+            <button class="add-task-btn" data-task-title="EPMO Air Triage Inputs - April 14 Deadline" data-task-notes="There is a discrepancy regarding &#x27;Air Triage&#x27; and its inclusion in EPMO&#x27;s blueprint investment process. Reconcile and submit inputs by April 14th (4/14) per Fernandez&#x27;s deadline.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Conduct a deeper dive into the Backstage open-source GitHub project to evaluate its suitability as a starter kit for the Architecture as Code implementation.</span>
+            <button class="add-task-btn" data-task-title="Research Backstage for Architecture as Code" data-task-notes="Evaluate the Backstage GitHub project (open-source by Spotify) for use as a starter kit. It provides both a data model and a UI/frontend. Assess fit for the Architecture as Code prototype and OSF (Open Source Forum) process requirements.">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Finalize and share the transcript of the &#x27;Architecture as Code&#x27; podcast to extract additional storytelling talking points for leadership alignment.</span>
+            <button class="add-task-btn" data-task-title="Share Architecture as Code Podcast Transcript" data-task-notes="Complete the podcast transcript and circulate it. Purpose: extract &#x27;storytelling&#x27; talking points to support the business value narrative when socializing Architecture as Code with Osterkamp, Deepak, and new leadership (Dan).">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- TECH NEWS -->
+<section class="section" id="tech">
+  <div class="container">
+    <h2 class="section-label">Tech News</h2>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="industry">Industry</button>
+      <button class="tab-btn" data-tab="ai">AI</button>
+      <button class="tab-btn" data-tab="gadgets">Gadgets</button>
+      <button class="tab-btn" data-tab="gaming">Gaming</button>
+    </div>
+
+    <!-- INDUSTRY NEWS -->
+    <div class="tab-panel active" id="tab-industry">
+      <a href="https://www.reuters.com/business/autos-transportation/spacex-aims-file-ipo-soon-this-week-information-reports-2026-03-25/" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>SpaceX Aims to File for IPO as Soon as This Week, Could Raise Over $75 Billion</h3>
+        <p>SpaceX is preparing to submit its IPO prospectus to regulators as soon as this week, according to a report from The Information. Sources close to the deal expect the company to raise over $75 billion, which would make it one of the largest IPOs in history. SpaceX is reportedly considering a listing on Nasdaq and is aiming for early inclusion in the Nasdaq 100 index; the deal follows its recent acquisition of Elon Musk&#x27;s xAI, valuing the merged entity at $1.25 trillion.</p>
+        <span class="story-source">Reuters &middot; March 25, 2026</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://www.foxbusiness.com/technology/jury-meta-google-landmark-trial-social-media-addiction-trial-damages" target="_blank" class="story-card">
+          <h3>Jury Finds Meta and Google Liable in Landmark Social Media Addiction Trial</h3>
+          <p>A Los Angeles jury found Meta and Google liable for designing social media platforms to be addictive to minors, awarding a total of $6 million in compensatory damages and an additional $3 million in punitive damages. Meta was ordered to pay 70% of the compensatory award, with Google responsible for the remaining 30%. The verdict is seen as a landmark precedent that could embolden thousands of similar lawsuits, raising the stakes around platform liability, Section 230 protections, and algorithmic design accountability.</p>
+          <span class="story-source">Fox Business &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techcrunch.com/2026/03/24/arm-is-releasing-its-first-in-house-chip-in-its-35-year-history/" target="_blank" class="story-card">
+          <h3>Arm Launches First In-House AI Chip in Its 35-Year History</h3>
+          <p>Arm Holdings unveiled the Arm AGI CPU at an event in San Francisco, marking the first time in the company&#x27;s history that it is producing its own silicon rather than purely licensing chip designs. The data-center CPU was developed with Meta as lead partner and claims more than 2x performance per rack versus x86 platforms, with early customers including Meta, OpenAI, Cloudflare, and Cerebras. Arm expects the chip to generate roughly $15 billion in annual revenue within five years, a move that signals a major strategic pivot for the semiconductor company.</p>
+          <span class="story-source">TechCrunch &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>EU Antitrust Chief Meets Google, Meta, OpenAI, and Amazon as AI Scrutiny Deepens</h3>
+          <p>European Commission Executive Vice President Teresa Ribera held meetings with senior leaders from Google, Meta, OpenAI, and Amazon to discuss antitrust concerns around AI. The EU is investigating whether tech incumbents are leveraging their platforms, cloud infrastructure, and data to tilt the AI market against rivals and startups. The discussions signal a deepening regulatory push that could shape the competitive landscape for AI across Europe.</p>
+          <span class="story-source">Tech Startups (via Reuters) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://www.macrumors.com/2026/03/04/apple-march-2026-product-releases/" target="_blank" class="story-card">
+          <h3>Apple Unveils &#x27;Apple Business&#x27; All-in-One Platform for Organizations</h3>
+          <p>Apple announced Apple Business, a new consolidated platform that unifies device management, productivity tools, and customer outreach features into a single service. The platform is designed to replace several existing business-focused offerings including Apple Business Essentials, Apple Business Manager, and Apple Business Connect. The move signals Apple&#x27;s ambition to deepen its presence in enterprise technology.</p>
+          <span class="story-source">MacRumors &middot; March 24, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>U.S. Bans Imports of New Foreign-Made Routers Over Security Fears</h3>
+          <p>The Trump administration issued a ban on imports of new foreign-made routers, citing supply-chain vulnerabilities and cybersecurity risks. The order affects retailers, telecom providers, businesses, and consumers, and represents an escalation of cybersecurity concerns into industrial trade policy. The move is expected to reshape the networking hardware market in the near term.</p>
+          <span class="story-source">Tech Startups (via AP) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>Amazon Acquires Fauna Robotics to Expand Consumer Humanoid Robot Push</h3>
+          <p>Amazon acquired New York-based Fauna Robotics, the startup behind the 3.5-foot &#x27;Sprout&#x27; bipedal humanoid robot priced at $50,000, in a move to deepen its presence in consumer and business robotics. The deal follows Amazon&#x27;s prior acquisition of delivery-robot company Rivr and builds on its automation heritage through Kiva Systems, with Fauna&#x27;s early customers including Disney and Boston Dynamics. The acquisition intensifies a race with Tesla&#x27;s Optimus, Figure AI, and Agility Robotics in the humanoid robot space.</p>
+          <span class="story-source">Tech Startups (via Bloomberg/CNBC) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>Apple Brings Paid Ads to Maps in Fresh Push for Services Revenue</h3>
+          <p>Apple is set to introduce paid search ads inside Apple Maps in the U.S. and Canada this summer, marking a significant expansion of its advertising business into location-based commerce. The move puts Apple in more direct competition with Google in local search and advertising while allowing the company to monetize high-intent user behavior. Apple framed the change as privacy-preserving relative to competitor ad products.</p>
+          <span class="story-source">Tech Startups (via Reuters) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>OpenAI Completes Next Major Model &#x27;Spud&#x27; as Sam Altman Pivots to Capital and Infrastructure</h3>
+          <p>OpenAI CEO Sam Altman has stepped back from direct oversight of the company&#x27;s safety and security teams to focus on fundraising, supply chains, and data center construction at massive scale, according to The Information. The company has simultaneously completed initial development of its next flagship model, internally codenamed &#x27;Spud.&#x27; The moves reflect an industry-wide shift where the competitive edge in AI is increasingly tied to infrastructure, capital, and logistics rather than purely model research.</p>
+          <span class="story-source">Tech Startups (via The Information) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>NVIDIA Partners with Utilities to Build &#x27;AI Factories&#x27; Tied Directly to Power Generation</h3>
+          <p>NVIDIA and Emerald AI announced partnerships with major power companies — including AES, Constellation, Invenergy, NextEra, Nscale Energy &amp; Power, and Vistra — to develop a new generation of &#x27;AI factories&#x27; that pair compute infrastructure with electricity generation, storage, and flexible grid coordination. The initiative underscores the growing view that energy access is now as central to AI competitiveness as chip availability. Jensen Huang also declared in a Lex Fridman podcast that AGI has been achieved, defining it as systems capable of autonomously running billion-dollar companies.</p>
+          <span class="story-source">Tech Startups (via Wall Street Journal) &middot; March 25, 2026</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- AI UPDATES -->
+    <div class="tab-panel" id="tab-ai">
+      <a href="https://arstechnica.com/ai/2026/03/google-says-new-turboquant-compression-can-lower-ai-memory-usage-without-sacrificing-quality/" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>Google Releases TurboQuant: New Compression Algorithm Reduces LLM Memory Usage by 6x with Zero Accuracy Loss</h3>
+        <p>Google Research published TurboQuant, a new suite of compression algorithms for large-scale language models and vector search engines that reduces key-value cache memory usage by at least 6x and delivers up to 8x processing speedup with no accuracy loss. Accompanying techniques include PolarQuant and Quantized Johnson-Lindenstrauss (QJL) for vector searches. The research was accepted at ICLR 2026 and is expected to send ripples through the memory and storage semiconductor sector.</p>
+        <span class="story-source">Ars Technica &middot; March 26, 2026</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://www.transparencycoalition.ai/news/ai-legislative-update-march27-2026" target="_blank" class="story-card">
+          <h3>AI Legislative Update: States Racing to Regulate AI as Federal Framework Looms</h3>
+          <p>Weekly AI legislative update from the Transparency Coalition AI shows rapid state-level action across the country, with Utah&#x27;s governor signing eight of nine AI-related bills and Washington&#x27;s governor signing four of five following the legislature&#x27;s March 12 adjournment. Active bills across multiple states address topics ranging from deepfakes and AI provenance data to workplace surveillance, companion chatbots, and healthcare AI. The activity comes as the White House&#x27;s March 20 National Policy Framework for AI signals a push for federal preemption of state laws.</p>
+          <span class="story-source">Transparency Coalition AI &middot; March 27, 2026</span>
+        </a>
+        <a href="https://techcrunch.com/2026/03/25/deccan-ai-raises-25m-as-ai-training-push-relies-on-india-based-workforce/" target="_blank" class="story-card">
+          <h3>Deccan AI Raises $25M Series A to Meet Surging Demand for Post-Training Data Work</h3>
+          <p>Deccan AI, a startup that supplies post-training data and AI model evaluation work with a predominantly India-based workforce, raised $25 million in a Series A round led by A91 Partners, with Susquehanna International Group and Prosus Ventures participating. The company grew 10x over the past year and counts Google DeepMind and Snowflake among its customers. The raise highlights the growing market for outsourced AI training and evaluation as frontier labs push to make models reliable in real-world applications.</p>
+          <span class="story-source">TechCrunch &middot; March 25, 2026</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=kpBtl-yBFeE" target="_blank" class="story-card">
+          <h3>Sanders and AOC Introduce AI Data Center Moratorium Act</h3>
+          <p>Senator Bernie Sanders and Representative Alexandria Ocasio-Cortez held a press conference to announce legislation that would impose a moratorium on the construction of new AI data centers until strong national safeguards are enacted. The bill would also ban exports of AI chips to any country without such protections, including China. The lawmakers cited energy consumption, environmental costs, worker displacement, and lack of meaningful government oversight as core justifications for the legislation.</p>
+          <span class="story-source">C-SPAN / Senator Sanders (YouTube) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>Allen Institute for AI Releases Open-Source Web Agent MolmoWeb to Challenge Big Tech Models</h3>
+          <p>The Allen Institute for AI (Ai2) launched MolmoWeb, an open-source browser agent built on its Molmo multimodal models, capable of interpreting webpage screenshots and performing actions like clicking and scrolling to complete tasks. Available in 4B and 8B parameter versions on Hugging Face and GitHub, the 8B model outperformed some proprietary agents from OpenAI, Google, and Anthropic on browser navigation benchmarks. The release is positioned as an open-foundation alternative to Big Tech&#x27;s closed agentic AI systems.</p>
+          <span class="story-source">Tech Startups (via GeekWire) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>Judge Says Pentagon&#x27;s Actions Against Anthropic Look Like Punishment for Resisting Military AI Terms</h3>
+          <p>A federal judge ruled that the Pentagon&#x27;s move to label Anthropic a supply-chain risk appears to be punitive, stemming from the company&#x27;s resistance to allowing unrestricted military use of its AI models. The ruling comes as the broader debate continues over how much control AI companies should retain over government and defense deployments of their technology. OpenAI, Google, and xAI have all separately secured deals with the Defense Department, leaving Anthropic as an outlier.</p>
+          <span class="story-source">Tech Startups (via WIRED) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>China Approves First Brain-Computer Interface Chips for Commercial Sale</h3>
+          <p>China greenlit the commercial sale of its first brain-computer interface (BCI) chips and outlined state-backed plans to scale the industry and lead global neural technology development, encompassing both medical and consumer applications. The move directly challenges the dominance of U.S.-based players in the space, such as Neuralink, and intensifies the broader technology competition between Washington and Beijing. The approvals signal accelerating investment at the intersection of AI and biological computing.</p>
+          <span class="story-source">Tech Startups (via WIRED) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://techstartups.com/2026/03/25/top-tech-news-today-march-25-2026/" target="_blank" class="story-card">
+          <h3>Google Prepares Chrome for Post-Quantum Cryptography to Protect Future HTTPS Connections</h3>
+          <p>Google is testing a new certificate architecture in Chrome designed to protect HTTPS and TLS connections against future quantum computers that could break current encryption standards. The initiative is part of a broader industry push to future-proof web security infrastructure ahead of practical quantum computing threats. The update is expected to set a browser security standard that will influence adoption across the entire web ecosystem.</p>
+          <span class="story-source">Tech Startups (via TechNewsWorld) &middot; March 25, 2026</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=h9TqjOFceBk" target="_blank" class="story-card">
+          <h3>Bloomberg: AI Is Reshaping the Battlefield as U.S.-China Military Technology Race Intensifies</h3>
+          <p>Bloomberg Technology&#x27;s Asia edition examined how AI is transforming geopolitics and modern warfare, with algorithms, sensors, and autonomous systems increasingly defining military strategy. Experts from Droneshield and Sakana.ai discussed AI&#x27;s role in defense and the ethical risks of autonomous weapons systems. The segment highlights growing concern from technology industry leaders, ethicists, and policymakers about the implications of deploying AI in lethal decision-making contexts.</p>
+          <span class="story-source">Bloomberg Technology (YouTube) &middot; March 27, 2026</span>
+        </a>
+        <a href="https://www.xda-developers.com/best-gaming-upgrade-in-2026-is-ai-upscaling-and-frame-generation/" target="_blank" class="story-card">
+          <h3>XDA: Best Gaming Upgrade in 2026 Is AI Upscaling and Frame Generation, Not Hardware</h3>
+          <p>XDA Developers published a detailed analysis arguing that AI upscaling technologies — including Nvidia DLSS, AMD FSR 4.1, and Intel XeSS — represent the most impactful gaming upgrade available in 2026, delivering frame rate and visual quality improvements that raw GPU hardware alone cannot match at equivalent price points. The article notes the RTX 5090 is only about 27% faster than its predecessor for a 25% price increase, making AI rendering techniques the more compelling value proposition. AMD&#x27;s FSR 4.1 is highlighted for significantly improved motion handling over FSR 4.</p>
+          <span class="story-source">XDA Developers &middot; March 25, 2026</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- CONSUMER ELECTRONICS AND GADGETS -->
+    <div class="tab-panel" id="tab-gadgets">
+      <a href="https://www.theverge.com/tech/901155/dell-xps-16-best-battery-lg-display-1hz-panther-lake-intel" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>Dell XPS 16 with Intel Panther Lake and LG 1Hz Display Achieves Nearly 27 Hours of Battery Life</h3>
+        <p>The Dell XPS 16 equipped with Intel&#x27;s Panther Lake processor (Core Ultra 325) and an LG Display screen that drops to 1Hz variable refresh rate has achieved nearly 27 hours of Wi-Fi web browsing in Notebookcheck testing, making it the most battery-efficient laptop tested since 2014. The 70Wh battery edges out every tested MacBook and most laptops with far larger batteries, with idle power consumption as low as 1.5 watts. LG Display announced it is the first globally mass-produced Oxide 1Hz laptop panel, with an OLED version planned for 2027.</p>
+        <span class="story-source">The Verge &middot; March 26, 2026</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://www.macrumors.com/2026/03/26/new-full-size-homepod-rumor/" target="_blank" class="story-card">
+          <h3>Apple Rumored to Be Planning New Full-Size HomePod Alongside Updated HomePod Mini and Apple TV</h3>
+          <p>Bloomberg&#x27;s Mark Gurman confirmed on a live Q&amp;A call that Apple is planning to release a new full-sized HomePod alongside updated HomePod mini and Apple TV models, with all three products expected this year. The launches are being held until Apple releases its revamped, more personalized version of Siri expected to debut in iOS 27 this September. Inventory of current Apple TV, HomePod mini, and full-sized HomePod models is running low globally, signaling that phase-outs are imminent.</p>
+          <span class="story-source">MacRumors &middot; March 26, 2026</span>
+        </a>
+        <a href="https://9to5google.com/2026/03/26/nothing-phone-4a-pro-release-date-hit/" target="_blank" class="story-card">
+          <h3>Nothing Phone (4a) Pro Ships March 27, Already Selling &#x27;Way Over Target&#x27;</h3>
+          <p>The Nothing Phone (4a) Pro, priced at $499 in the U.S., starts shipping on March 27, with CEO Carl Pei stating pre-orders are selling &#x27;way over target.&#x27; The phone has been praised by early reviewers as one of the standout handsets of 2026, continuing Nothing&#x27;s signature transparent design language. It is available from Nothing&#x27;s website — with a $100 coupon for other Nothing products — or on Amazon.</p>
+          <span class="story-source">9to5Google &middot; March 26, 2026</span>
+        </a>
+        <a href="https://news.samsung.com/global/samsung-unveils-galaxy-a57-5g-and-galaxy-a37-5g-packing-pro-level-features-at-awesome-price" target="_blank" class="story-card">
+          <h3>Samsung Unveils Galaxy A57 5G and Galaxy A37 5G with AI-Powered Features</h3>
+          <p>Samsung announced the Galaxy A57 5G and Galaxy A37 5G, the latest additions to its Galaxy A series that bring AI-enhanced &#x27;Awesome Intelligence&#x27; capabilities to mid-range and budget smartphone buyers. Both devices feature a triple 50MP main camera system, Super AMOLED+ displays with up to 120Hz refresh rate, IP68 water resistance, 5,000mAh batteries with Super Fast Charging 2.0, and up to six generations of Android OS updates. The phones will be available starting April 10 globally, with U.S. availability starting April 9; the A57 starts at $549.99.</p>
+          <span class="story-source">Samsung Global Newsroom &middot; March 25, 2026</span>
+        </a>
+        <a href="https://www.bgr.com/2133466/iphone-google-real-time-headphone-translation/" target="_blank" class="story-card">
+          <h3>Google Translate Real-Time Headphone Translation Finally Arrives on iPhone</h3>
+          <p>Google&#x27;s AI-powered Live Translate feature — which enables real-time speech-to-speech translation in over 70 languages using any pair of wireless headphones — has officially launched on iPhone, several months after debuting on Android. The feature is free and works with any brand of wireless headphones (unlike Apple&#x27;s AirPods-only solution), and expands to new countries including Germany, France, Italy, Japan, the UK, Spain, and Thailand. The update also significantly broadens the list of supported languages and countries globally.</p>
+          <span class="story-source">BGR &middot; March 27, 2026</span>
+        </a>
+        <a href="https://www.macrumors.com/2026/03/24/apple-50th-anniversary-events/" target="_blank" class="story-card">
+          <h3>Apple&#x27;s 50th Anniversary Celebrations Continue with Sydney Opera House Light Installation</h3>
+          <p>Apple&#x27;s global 50th anniversary celebrations extended to the Sydney Opera House, where the eastern sails were illuminated from March 25 to March 27 with artwork created in Procreate on iPad. The festivities have been rolling out across multiple countries and cities, including events in the UK, Canada, and Mexico. Apple&#x27;s 50th anniversary falls on April 1, 2026, capping off a major launch year that already included seven new products.</p>
+          <span class="story-source">MacRumors &middot; March 24, 2026</span>
+        </a>
+        <a href="https://www.bgr.com/2130303/apple-wwdc-2026-date-ios-27-reveal/" target="_blank" class="story-card">
+          <h3>Apple Reveals WWDC 2026 Dates: iOS 27, iPadOS 27, and macOS 27 Set for June 8-12</h3>
+          <p>Apple confirmed that its Worldwide Developers Conference 2026 will take place June 8-12, with an online keynote on June 8 where iOS 27, iPadOS 27, macOS 27, watchOS 27, tvOS 27, and visionOS 27 are all expected to be unveiled. The conference is expected to focus heavily on Apple Intelligence and the company&#x27;s plans for a revamped, Gemini-powered Siri. iPhone Fold and OLED MacBook Pro are among the rumored hardware announcements expected later in the year.</p>
+          <span class="story-source">BGR &middot; March 23, 2026</span>
+        </a>
+        <a href="https://9to5google.com/2026/03/23/march-2026-google-system-updates/" target="_blank" class="story-card">
+          <h3>Google Brings New AI Features to Android via March 2026 System Updates</h3>
+          <p>Google&#x27;s March 2026 Play Services update (v26.11) rolls out new Android features including Gemini integration, a Wi-Fi Sync feature that automatically shares trusted Wi-Fi networks across a user&#x27;s device ecosystem, updates to Search, Photos, Gmail, and Messages, and expanded payment capabilities for Wear OS. The Play Store (v50.7) also adds search within the All Reviews Page for finding user feedback faster. These updates are rolling out across phones, tablets, Wear OS, Google/Android TV, and PC.</p>
+          <span class="story-source">9to5Google &middot; March 23, 2026</span>
+        </a>
+        <a href="https://www.theverge.com/archives/tech/2026/3/27" target="_blank" class="story-card">
+          <h3>Framework Raises RAM and Storage Prices Again on Its Modular Laptops</h3>
+          <p>Framework, the modular laptop company, has announced another round of price increases for RAM and storage upgrades across its product lineup, continuing a trend that has frustrated some of its cost-conscious customer base. The Verge reported the move as part of broader supply-chain and component pricing pressures facing the hardware industry. Framework&#x27;s modular and repairable laptop concept remains popular but pricing for upgrades continues to climb.</p>
+          <span class="story-source">The Verge &middot; March 27, 2026</span>
+        </a>
+        <a href="https://www.macrumors.com/2026/03/04/apple-march-2026-product-releases/" target="_blank" class="story-card">
+          <h3>Apple Releases New Firmware for AirPods Pro 3, AirPods Pro 2, and AirPods 4</h3>
+          <p>Apple pushed new firmware (version 8B39) to AirPods Pro 2, AirPods Pro 3, and AirPods 4, up from 8B34 on the Pro 3, 8B28 on the Pro 2, and 8B21 on the AirPods 4. Apple did not publish detailed release notes, which is typical; the updates are expected to contain bug fixes and performance improvements. The release follows the broader March lineup of Apple hardware and software updates.</p>
+          <span class="story-source">MacRumors &middot; March 24, 2026</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- GAMING NEWS -->
+    <div class="tab-panel" id="tab-gaming">
+      <a href="https://news.xbox.com/en-us/2026/03/26/xbox-partner-preview-march-2026-recap/" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>Xbox Partner Preview March 2026: 19 Games Announced, Including 7 World Premieres</h3>
+        <p>Xbox held its March 2026 Partner Preview, a 30-minute broadcast hosted by Aaron Paul, unveiling 19 upcoming games including 7 never-before-seen titles. World premieres included Hunter: The Reckoning – Deathwish (a first-person action game in the World of Darkness universe), Artificial Detective (a post-apocalyptic robot detective adventure), and Alien Deathstorm from Rebellion. Fourteen of the announced titles will be available day one with Xbox Game Pass Ultimate, and Hades II was confirmed for Xbox launch on April 14.</p>
+        <span class="story-source">Xbox Wire &middot; March 26, 2026</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://news.xbox.com/en-us/2026/03/25/march-2026-xbox-update/" target="_blank" class="story-card">
+          <h3>Xbox March 2026 Update: Project Helix Teased at GDC, New Console Features Roll Out</h3>
+          <p>Microsoft&#x27;s March 2026 Xbox update delivered several new features to Xbox Insiders, including up to 10 customizable Home groups, custom color themes, per-game Quick Resume settings, and profile badges. At GDC, Microsoft shared an early look at Project Helix, its next-generation console designed to natively play both Xbox and PC games, and confirmed Xbox mode will begin rolling out to all Windows 11 devices in April. The Xbox Play Anywhere catalog now exceeds 1,500 titles.</p>
+          <span class="story-source">Xbox Wire &middot; March 25, 2026</span>
+        </a>
+        <a href="https://finance.yahoo.com/sectors/technology/articles/life-strange-reunion-now-available-130000644.html" target="_blank" class="story-card">
+          <h3>Life Is Strange: Reunion Launches on PS5, Xbox Series X|S, and PC</h3>
+          <p>Square Enix released Life Is Strange: Reunion, the concluding chapter of Max Caulfield and Chloe Price&#x27;s story, on March 26 for PlayStation 5, Xbox Series X|S, and PC via Steam and Microsoft Store. Unlike the original episodic release model, the entire game launched simultaneously on day one. Developed by Deck Nine, Reunion utilizes Max&#x27;s Rewind and Chloe&#x27;s Backtalk abilities as players work to avert a tragic outcome in the series finale.</p>
+          <span class="story-source">Yahoo Finance (Business Wire) &middot; March 26, 2026</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=P0Ko-1ZOqaI" target="_blank" class="story-card">
+          <h3>Mega Man Star Force Legacy Collection Launches March 27 Across All Platforms</h3>
+          <p>Capcom&#x27;s Mega Man Star Force Legacy Collection launches on March 27, 2026 for Nintendo Switch, PlayStation 5, PlayStation 4, Xbox Series X|S, Xbox One, and PC via Steam, celebrating the franchise&#x27;s 20th anniversary. The collection includes all seven titles from the Nintendo DS series with a dual-screen display mode that renders both screens on a single monitor, online play, and extras including an illustration and music gallery. Pre-order buyers receive four bonus musical arrangements and exclusive character skins.</p>
+          <span class="story-source">Reddit/Capcom (confirmed via official Capcom YouTube) &middot; March 27, 2026</span>
+        </a>
+        <a href="https://news.xbox.com/en-us/2026/03/26/xbox-partner-preview-march-2026-recap/" target="_blank" class="story-card">
+          <h3>S.T.A.L.K.E.R. 2: Cost of Hope DLC Gets First Look Trailer at Xbox Partner Preview</h3>
+          <p>GSC Game World revealed the first trailer for the S.T.A.L.K.E.R. 2: Cost of Hope expansion at the Xbox Partner Preview, featuring a major new conflict between the Duty and Freedom factions set around the Chornobyl Nuclear Power Plant and a new explorable area called Iron Forest with over 20 hours of content. The DLC is coming to Xbox Series X|S, Xbox on PC, and Xbox Cloud, and is expected in summer 2026. A developer breakdown was also made available alongside the trailer.</p>
+          <span class="story-source">Xbox Wire &middot; March 26, 2026</span>
+        </a>
+        <a href="https://news.xbox.com/en-us/2026/03/26/xbox-partner-preview-march-2026-recap/" target="_blank" class="story-card">
+          <h3>Hades II Confirmed for Xbox Launch on April 14 with Day-One Game Pass</h3>
+          <p>Supergiant Games&#x27; Hades II, the roguelike sequel where the Princess of the Underworld battles the Titan of Time, is officially coming to Xbox Series X|S and Xbox on PC on April 14, 2026, available day one with Xbox Game Pass. The announcement came during the March 2026 Xbox Partner Preview. Hades II has been in Steam Early Access and has been one of the most anticipated Xbox arrivals for fans of the critically acclaimed original.</p>
+          <span class="story-source">Xbox Wire &middot; March 26, 2026</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=eNlcs1iy3F8" target="_blank" class="story-card">
+          <h3>All Major Game Announcements from March 2026: Onimusha, Mixtape, Marathon, and More</h3>
+          <p>A wave of major game announcements came out of March 2026 showcases and events, including first looks at Onimusha: Way of the Sword (RE Engine), the narrative road-trip game Mixtape (coming May 7 to PS5, Xbox, Switch 2 and PC), and continued coverage of Bungie&#x27;s extraction shooter Marathon. The Future Games Show and Xbox showcases also revealed updates to Minecraft Dungeons II and introduced new RPGs. Many of the announcements highlighted the breadth of titles across PS5, Xbox, Switch 2, and PC for mid-2026 release.</p>
+          <span class="story-source">YouTube (All Major Game Announcements – March 2026) &middot; March 26, 2026</span>
+        </a>
+        <a href="https://news.xbox.com/en-us/2026/03/25/march-2026-xbox-update/" target="_blank" class="story-card">
+          <h3>Xbox Cloud Gaming Passes 1,000 Streamable User-Owned Games</h3>
+          <p>Xbox announced that its &#x27;Stream Your Own Game&#x27; feature in Xbox Cloud Gaming now allows subscribers to stream from a library of over 1,000 games they personally own, across Xbox Game Pass Ultimate, Premium, and Essential plans. Recent additions include Marathon, Monster Hunter Stories 3: Twisted Reflection, Crimson Desert, WWE 2K26, and Legacy of Kain: Defiance Remastered. The milestone represents a significant expansion of cloud gaming flexibility, letting players access their libraries on phones, tablets, and other supported devices.</p>
+          <span class="story-source">Xbox Wire &middot; March 25, 2026</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INSURETECH -->
+<section class="section section-muted" id="insuretech">
+  <div class="container">
+    <h2 class="section-label">InsureTech</h2>
+    <div class="story-grid full-grid">
+      <a href="https://www.globenewswire.com/news-release/2026/03/25/3262061/0/en/Notch-Raises-30-Million-to-Bring-Production-Ready-AI-Agents-to-Regulated-Industries.html" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">March 25, 2026</span>
+        <h3>Notch Raises $30 Million Series A to Deploy Production-Ready AI Agents for Insurers</h3>
+        <p>Notch, an AI platform for regulated industries, announced a $30 million Series A on March 25 led by Headline, with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and strategic investor Phoenix Insurance. The company has built what it calls an &#x27;AI operating system&#x27; for insurers and financial institutions, enabling end-to-end automation of operational workflows—from broker and policyholder interactions to claims intake, underwriting submissions, and back-office document processing—with full auditability and governance controls. Over the past 12 months, Notch grew ARR by 12x and will use the funding to accelerate U.S. expansion.</p>
+        <span class="story-source">GlobeNewswire</span>
+      </a>
+      <a href="https://www.prnewswire.com/news-releases/health-in-tech-announces-7-0-million-private-placement-302725416.html" target="_blank" class="story-card">
+        <span class="story-kicker">March 25, 2026</span>
+        <h3>Health In Tech Announces $7.0 Million Private Placement to Expand AI-Enabled InsurTech Platform</h3>
+        <p>Health In Tech, Inc. (Nasdaq: HIT), an AI-enabled InsurTech platform company, announced a $7.0 million private investment in public equity (PIPE) on March 25, issuing 5,600,000 shares of Class A common stock at $1.25 per share with Craig-Hallum Capital Group as sole placement agent. The company, which posted 71% revenue growth, plans to use proceeds for sales distribution expansion, technology and product development, and working capital. The PIPE was expected to close on or around March 27, 2026, subject to customary closing conditions.</p>
+        <span class="story-source">PR Newswire</span>
+      </a>
+      <a href="https://www.prnewswire.com/news-releases/shepherd-raises-42m-series-b-to-power-the-insurance-behind-ai-infrastructure-boom-302723122.html" target="_blank" class="story-card">
+        <span class="story-kicker">March 24, 2026</span>
+        <h3>Shepherd Raises $42M Series B to Insure AI Infrastructure Boom with AI-Native Underwriting Platform</h3>
+        <p>Shepherd, the AI-native commercial insurance platform, closed a $42 million Series B led by Intact Private Capital, bringing total funding to $67 million, to expand underwriting of data centers, energy assets, and critical infrastructure. The platform has grown revenue more than 7x in 24 months, issuing over 1,500 policies covering $400 billion in insured project value for 600+ customers including firms building frontier AI infrastructure. Shepherd&#x27;s proprietary AI underwriting delivers pricing in minutes for complex construction and infrastructure risks, integrating real-time data from partners like Procore and Autodesk.</p>
+        <span class="story-source">PR Newswire</span>
+      </a>
+      <a href="https://www.insurancejournal.com/news/national/2026/03/26/863472.htm" target="_blank" class="story-card">
+        <span class="story-kicker">March 26, 2026</span>
+        <h3>P/C Underwriting Income Surges $40B in 2025 to $63 Billion, Say Verisk and APCIA</h3>
+        <p>Verisk and the American Property Casualty Insurance Association released preliminary 2025 U.S. property/casualty financial results showing a $63 billion net underwriting gain—nearly tripling the $23 billion gain in 2024 and reversing a $22 billion loss in 2023. The combined ratio improved significantly to 92.9, down from 96.6 in 2024, driven largely by a near-90% decline in hurricane-related claims due to limited U.S. landfall rather than a structural shift in risk. Verisk Underwriting Solutions president Saurabh Khemka cautioned that 2025 represents a &#x27;reset after several years of volatility, not a new normal,&#x27; pointing to ongoing pressures from commercial liability, rising construction costs, and severe convective storms heading into 2026.</p>
+        <span class="story-source">Insurance Journal</span>
+      </a>
+      <a href="https://www.businesswire.com/news/home/20260326985108/en/ShoreOne-Insurance-Managers-Inc.-ShoreOne-Has-Been-Acquired-by-Totalis-Program-Underwriters-Totalis" target="_blank" class="story-card">
+        <span class="story-kicker">March 26, 2026</span>
+        <h3>Totalis Program Underwriters Acquires Coastal Home/Flood InsurTech ShoreOne</h3>
+        <p>ShoreOne Insurance Managers, Inc., a 2021-founded InsurTech specializing in integrated homeowners and flood insurance for coastal markets in South Carolina, New Jersey, New York, Massachusetts, and Rhode Island, has been acquired by Totalis Program Underwriters in a deal announced March 26. ShoreOne&#x27;s differentiated single-policy product—covering both traditional perils and flood for coastal homeowners—will continue operating as an independent business unit within Totalis, with co-founder Cameron Rhodes succeeding Nick Steffey as CEO. Financial terms were not disclosed.</p>
+        <span class="story-source">Business Wire</span>
+      </a>
+      <a href="https://www.insurancejournal.com/news/west/2026/03/26/863586.htm" target="_blank" class="story-card">
+        <span class="story-kicker">March 26, 2026</span>
+        <h3>Marsh Risk Secures First-Ever Commercial Insurance for U.S. Advanced Nuclear Power Plant Construction</h3>
+        <p>Marsh Risk announced it has secured comprehensive insurance coverage for TerraPower&#x27;s Kemmerer Unit 1 in Wyoming—the nation&#x27;s first commercial-scale advanced nuclear power plant approved for construction by the Nuclear Regulatory Commission—marking the first time a next-generation U.S. nuclear plant has gained direct access to the commercial insurance marketplace. The placement, backed by U.S., London, and Bermuda insurers alongside traditional nuclear pools and risk-retention vehicles, covers TerraPower and its partners throughout the construction phase of the 345 MWe sodium-cooled Natrium reactor. The deal represents a landmark in specialty risk placement and the insurability of next-generation nuclear technologies.</p>
+        <span class="story-source">Insurance Journal</span>
+      </a>
+      <a href="https://www.insurancejournal.com/news/southcentral/2026/03/26/863594.htm" target="_blank" class="story-card">
+        <span class="story-kicker">March 26, 2026</span>
+        <h3>Risk Theory Launches Tech-Enabled Dealer Transit Program to Combat $7.4 Billion Vehicle Theft Exposure</h3>
+        <p>Risk Theory, a Dallas-based specialty insurance platform, launched Dealer Transit on March 26—a logistics solution integrating insurance protection with a technology-enabled vehicle transportation platform to help dealerships prevent theft during transit. Backed by Risk Point (Risk Theory&#x27;s dealership underwriting platform), the program offers policyholders expanded theft protection, $0 deductibles for total theft losses, and no loss run impact at no additional cost, addressing a segment where Risk Point alone paid over $15 million in transit theft claims in the prior year. The launch reflects a broader InsurTech trend of combining embedded insurance with technology platforms to address specialty verticals.</p>
+        <span class="story-source">Insurance Journal</span>
+      </a>
+      <a href="https://natlawreview.com/press-releases/insurtech-insurance-technology-market-2026-revolutionizing-traditional" target="_blank" class="story-card">
+        <span class="story-kicker">March 26, 2026</span>
+        <h3>InsurTech Global Market Report 2026: Sector to Surpass $59 Billion by 2030 at 16% CAGR</h3>
+        <p>The Business Research Company&#x27;s InsurTech Global Market Report 2026 projects the insurance technology market will grow from approximately $10 billion in 2025 to over $59 billion by 2030 at a 16% CAGR, with North America—valued at $20 billion—as the largest region and the U.S. alone projected to reach $18 billion. Key growth drivers cited include increasing investment in AI-driven risk assessment and claims automation, strong venture capital funding for InsurTech startups, expanding insurer-technology partnerships, and favorable regulatory frameworks for financial technology innovation. The solution segment will account for 71% of market value, driven by AI-powered underwriting platforms, automated claims processing, and blockchain-enabled policy management.</p>
+        <span class="story-source">The National Law Review</span>
+      </a>
+      <a href="https://www.carriermanagement.com/news/2026/03/26/286052.htm" target="_blank" class="story-card">
+        <span class="story-kicker">March 26, 2026</span>
+        <h3>Verisk and APCIA Call 2025 P/C Results a &#x27;Reset,&#x27; Warn Underwriting Discipline Remains Critical in 2026</h3>
+        <p>Carrier Management&#x27;s analysis of the joint Verisk/APCIA P/C industry report highlights that the nearly 3x surge in pretax underwriting profit—landing at a combined ratio of 92.9—was fueled more by anomalously low catastrophe losses than by fundamental improvement in the business. More than half of the loss ratio improvement in 2025 came from lower catastrophe losses (7.6 combined ratio points vs. 8.8 in 2024) and favorable prior-year reserve development (2.1 points vs. 0.7). Industry analysts warn that 2026&#x27;s early tornado and hail season, moderating rate momentum, and elevated legal system costs signal that the pricing environment is already reversing—making AI-assisted underwriting precision and disciplined risk selection increasingly critical.</p>
+        <span class="story-source">Carrier Management</span>
+      </a>
+      <a href="https://www.resourcepro.com/blogs/ai-and-pc-insurance-more-upside-than-downside/" target="_blank" class="story-card">
+        <span class="story-kicker">March 26, 2026</span>
+        <h3>AI and P&amp;C Insurance: Analysis Finds More Growth Than Disruption as AI Scales Across Industry</h3>
+        <p>A ReSource Pro analysis published March 26 challenges fears of AI-driven insurance disintermediation, drawing on historical parallels with Internet-era predictions that failed to eliminate agents or underwriters—noting that independent agencies now handle 87% of commercial lines versus 83% a decade prior. The piece forecasts that AI will help double P&amp;C premiums to approximately $2 trillion by 2035 at a 7% CAGR, with productivity gains enabling professionals to handle 2-3x more accounts while only modestly reducing headcount in administrative roles. Large carriers are already deploying generative and agentic AI tools to tens of thousands of employees, and AI-native insurtechs are integrating into agency management and CRM systems across the distribution chain.</p>
+        <span class="story-source">ReSource Pro</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="section" id="history">
+  <div class="container">
+    <h2 class="section-label">On This Day &middot; March 27</h2>
+    <div class="history-list">
+      <div class="hist-row"><span class="hist-year">1513</span><div><strong>Ponce de León Sights Florida</strong><p>Spanish explorer Juan Ponce de León became the first European to sight the Florida peninsula, which he named &#x27;La Florida&#x27; in honor of the Easter season (&#x27;Pascua Florida&#x27;). His discovery opened the door to Spanish exploration and eventual colonization of North America.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1625</span><div><strong>Charles I Ascends the English Throne</strong><p>Following the death of his father James I, Charles I became King of England, Scotland, and Ireland. His reign was marked by ongoing conflict with Parliament over royal authority, ultimately leading to the English Civil War and his execution in 1649.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1794</span><div><strong>U.S. Navy Established</strong><p>The U.S. Congress passed the Naval Act of 1794, authorizing the construction of six frigates and establishing a permanent United States Navy. The move was driven by the need to protect American merchant ships from Barbary pirates operating in the Mediterranean.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1814</span><div><strong>Battle of Horseshoe Bend</strong><p>U.S. forces under General Andrew Jackson decisively defeated the Creek Nation at the Battle of Horseshoe Bend in present-day Alabama, killing over 800 warriors. The victory effectively ended the Creek War and forced the Creek people to cede 23 million acres of land.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1871</span><div><strong>First International Rugby Match</strong><p>Scotland defeated England in Edinburgh at Raeburn Place in the first-ever international rugby football match, winning by one goal and one try to England&#x27;s one try. The match established the tradition of international rugby competition that continues today.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1884</span><div><strong>First Long-Distance Telephone Call</strong><p>The first long-distance telephone call was successfully completed between Boston and New York City, a distance of roughly 235 miles. The achievement was a major milestone in communications technology and demonstrated the commercial potential of Alexander Graham Bell&#x27;s invention.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1912</span><div><strong>First Cherry Blossom Trees Planted in Washington D.C.</strong><p>First Lady Helen Taft and the Viscountess Chinda, wife of the Japanese ambassador, planted the first two Yoshino cherry trees on the northern bank of the Potomac River in Washington, D.C. The planting, a gift from Japan, marked the beginning of what became the annual National Cherry Blossom Festival.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1964</span><div><strong>Good Friday Earthquake Strikes Alaska</strong><p>A magnitude 9.2 earthquake — the most powerful ever recorded in North American history — struck Southcentral Alaska, killing 125 people and causing catastrophic damage to Anchorage and surrounding communities. The quake also triggered tsunamis that caused destruction as far away as California and Oregon.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1977</span><div><strong>Tenerife Airport Disaster</strong><p>Two Boeing 747 airliners — a KLM and a Pan Am flight — collided on a fog-covered runway at Los Rodeos Airport in the Canary Islands, killing 583 people. It remains the deadliest accident in aviation history, caused by a combination of fog, miscommunication, and runway confusion.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1998</span><div><strong>FDA Approves Viagra</strong><p>The U.S. Food and Drug Administration approved sildenafil citrate (Viagra), manufactured by Pfizer, making it the first oral medication approved to treat erectile dysfunction. The drug became one of the best-selling pharmaceuticals in history, generating billions of dollars in annual revenue.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Daily Brief &middot; March 27, 2026 at 6:31 AM CDT</span>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
