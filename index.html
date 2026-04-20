@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Brief &mdash; April 20, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">Daily Brief</a>
+    <nav class="nav" id="nav">
+      <a href="#schedule">Schedule</a>
+      <a href="#meeting-prep">Prep</a>
+      <a href="#tasks">Tasks</a>
+      <a href="#review">Review</a>
+      <a href="#tech">Tech</a>
+      <a href="#insuretech">InsureTech</a>
+      <a href="#history">History</a>
+      <a href="#lab">Lab</a>
+    </nav>
+    <div class="header-actions">
+      <button data-theme-toggle aria-label="Toggle theme" class="icon-btn">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#schedule">Schedule</a>
+    <a href="#meeting-prep">Prep</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#review">Review</a>
+    <a href="#tech">Tech</a>
+    <a href="#insuretech">InsureTech</a>
+    <a href="#history">History</a>
+    <a href="#lab">Lab</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="overline" id="heroDate">Monday, April 20, 2026</span>
+    <h1 id="heroGreeting">Good Morning, Mark.</h1>
+    <p class="hero-sub" id="heroSub">11 meetings &middot; 0 tasks &middot; Dense schedule today</p>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section" id="schedule">
+  <div class="container">
+    <div class="section-label-row">
+      <h2 class="section-label">Schedule</h2>
+      <div class="sched-actions">
+        <span class="sched-updated" id="schedUpdated"></span>
+        <button class="refresh-btn" id="refreshCalBtn" title="Refresh calendar">
+          <svg class="refresh-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="advice-bar">
+      <strong>Day Management:</strong> You have <span style="color:var(--red);font-weight:600">8 back-to-back meetings</span> &mdash; plan transitions carefully. Use the <strong>60-min gap</strong> after Lunch / Desk Time (1:00 PM) to prepare for <strong>Bi-weekly: Tech Decision Review Group</strong>. Prioritize <strong>P&amp;C Strategy - Data Architecture sync</strong> (9:00 AM) &mdash; review the meeting prep notes below before attending. <strong>3 meetings</strong> have prep materials ready below.
+    </div>
+    <div id="schedule-container">
+      <div class="sched-item">
+        <span class="sched-time">8:30 AM &ndash; 8:55 AM</span>
+        <span class="sched-title">EA Follow-up with Michael Lessor</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">9:00 AM &ndash; 9:25 AM</span>
+        <span class="sched-title">P&amp;C Strategy - Data Architecture sync</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">9:30 AM &ndash; 9:55 AM</span>
+        <span class="sched-title">Weekly: Calendar Review</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">10:00 AM &ndash; 10:25 AM</span>
+        <span class="sched-title">Bi-weekly 1:1 w/Praveena | Mark</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">10:30 AM &ndash; 11:00 AM</span>
+        <span class="sched-title">Background for Claims Communication Notifications R... &middot; Mark&#x27;s Office</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">11:00 AM &ndash; 11:25 AM</span>
+        <span class="sched-title">Bi-Monthly sync - EA + Keith Wechsler | Mark Francis</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">11:30 AM &ndash; 1:00 PM</span>
+        <span class="sched-title">Lunch / Desk Time</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">2:00 PM &ndash; 3:00 PM</span>
+        <span class="sched-title">Bi-weekly: Tech Decision Review Group</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">2:30 PM &ndash; 3:00 PM</span>
+        <span class="sched-title">Claims Communication Notifications Review</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">3:30 PM &ndash; 4:00 PM</span>
+        <span class="sched-title">EPOs Debrief for Solutions Engineer Staff - Claims</span>
+      </div>
+      <div class="sched-item">
+        <span class="sched-time">4:00 PM &ndash; 4:25 PM</span>
+        <span class="sched-title">Monthly 1:1 w/Abe Capetillo | Mark Francis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEETING PREP -->
+<section class="section section-muted" id="meeting-prep">
+  <div class="container">
+    <h2 class="section-label">Meeting Prep</h2>
+    <div id="meeting-prep-container">
+      <div class="tasks-loading"><p class="task-meta">Loading meeting prep...</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TASKS -->
+<section class="section" id="tasks">
+  <div class="container">
+    <div class="section-label-row">
+      <h2 class="section-label">Tasks</h2>
+      <div class="pill-group">
+        <button class="pill active" data-sort="date">Due Date</button>
+        <button class="pill" data-sort="newest">Newest</button>
+      </div>
+    </div>
+    <div id="tasks-container">
+      <div class="tasks-loading">
+        <p class="task-meta">Loading tasks...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YESTERDAY IN REVIEW -->
+<section class="section section-muted" id="review">
+  <div class="container">
+    <h2 class="section-label">Yesterday in Review</h2>
+    <p class="review-subtitle">8 key meetings from Friday, April 17</p>
+
+    <!-- Meeting 1: SMS Architecture Vision -- Unified Enterprise Messaging Fabric -->
+    <details class="review-card" open>
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>SMS Architecture Vision -- Unified Enterprise Messaging Fabric</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>First formal articulation of the &#x27;Unified Enterprise Messaging Fabric&#x27; strategy. Iris as routing hub, Twilio/AWS Connect as last-mile aggregator, Salesforce Marketing Cloud and MSR as agnostic orchestration layers, Air Traffic Control for universal opt-out. Three-phase roadmap: standardization (decommission Hi Marley/Drips, finalize Salesforce-Iris APIs) through Q2, data unification (CDP telemetry) by month 6, omnichannel maturity via 2027 PLN refresh.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>BLOCKING: Prepare holistic SMS strategy response to Dan -- gated on stakeholder alignment with Abe and Charity</span>
+            <button class="add-task-btn" data-task-title="BLOCKING: Prepare holistic SMS strategy response to Dan -- g" data-task-notes="BLOCKING: Prepare holistic SMS strategy response to Dan -- gated on stakeholder alignment with Abe and Charity">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Validate the $910K Salesforce-Iris integration labor estimate -- leadership suspects it&#x27;s inflated</span>
+            <button class="add-task-btn" data-task-title="Validate the $910K Salesforce-Iris integration labor estimat" data-task-notes="Validate the $910K Salesforce-Iris integration labor estimate -- leadership suspects it&#x27;s inflated">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Clean up the $1M+ cost discrepancy before Marketing quotes it back at you</span>
+            <button class="add-task-btn" data-task-title="Clean up the $1M+ cost discrepancy before Marketing quotes i" data-task-notes="Clean up the $1M+ cost discrepancy before Marketing quotes it back at you">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 2: SMS Discussion with Jeff -- Salesforce vs. Iris Debate -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>SMS Discussion with Jeff -- Salesforce vs. Iris Debate</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Sharp debate on Salesforce Mobile Connect (~$200K/yr for 42M messages, upfront credits) vs. existing Iris/Twilio ecosystem. Marketing pushing &#x27;Best of Suite&#x27;; Architecture pushing unified platform. The $910K internal labor estimate for Salesforce-Iris integration is under suspicion. Recent wins cited: AWS Connect two-way demo and PNC servicing move off Hi Marley.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Align Abe and Charity on unified-platform preference with speed-to-market vs. long-term-cost framing</span>
+            <button class="add-task-btn" data-task-title="Align Abe and Charity on unified-platform preference with sp" data-task-notes="Align Abe and Charity on unified-platform preference with speed-to-market vs. long-term-cost framing">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Broader SMS meeting with Jeff and Kennon at 1:00 PM was the next forcing function -- confirm outcome</span>
+            <button class="add-task-btn" data-task-title="Broader SMS meeting with Jeff and Kennon at 1:00 PM was the " data-task-notes="Broader SMS meeting with Jeff and Kennon at 1:00 PM was the next forcing function -- confirm outcome">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 3: SEP/CTO -- Policy Review (Mark/Mike) -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>SEP/CTO -- Policy Review (Mark/Mike)</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Formalizing the CTO-SCP engagement model for Policy Mod. Thomas and Michael built a Wiki + RACI with CTO-owned &#x27;Permits to Build&#x27; and formal sign-offs replacing verbal agreements. Critical gap: no new BA headcount -- strategy is to &#x27;tool our way out&#x27; via Project Genie and Architecture as Code. Talent concern: recent interviews show candidates thinking &#x27;engineer/order-taker&#x27; not architect.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Review the RACI/engagement model through P&amp;C&#x27;s organizational lens</span>
+            <button class="add-task-btn" data-task-title="Review the RACI/engagement model through P&amp;C&#x27;s organizationa" data-task-notes="Review the RACI/engagement model through P&amp;C&#x27;s organizational lens">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Back the CTO-SCP model with Dan Weaver; align with Larry&#x27;s KPI/OKR framing</span>
+            <button class="add-task-btn" data-task-title="Back the CTO-SCP model with Dan Weaver; align with Larry&#x27;s K" data-task-notes="Back the CTO-SCP model with Dan Weaver; align with Larry&#x27;s KPI/OKR framing">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Add Thomas and Michael to Foundry and Go-to-Market conversations</span>
+            <button class="add-task-btn" data-task-title="Add Thomas and Michael to Foundry and Go-to-Market conversat" data-task-notes="Add Thomas and Michael to Foundry and Go-to-Market conversations">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>&#x27;Permit to Build&#x27; Jira boards: 2-week clock for Michael/Thomas to flood-populate</span>
+            <button class="add-task-btn" data-task-title="&#x27;Permit to Build&#x27; Jira boards: 2-week clock for Michael/Thom" data-task-notes="&#x27;Permit to Build&#x27; Jira boards: 2-week clock for Michael/Thomas to flood-populate">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 4: James Karras -- Project Updates &amp; Architecture Concerns -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>James Karras -- Project Updates &amp; Architecture Concerns</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Wide-ranging sync: two-way texting demo functional in test; architectural fragmentation concern on one-way marketing SMS decision; potential &#x27;freebie&#x27; headcount from Abe to Dan; Agent Assist RFE in motion (possibly absorbed into Contact Center as a Service); AI-scored RFP &#x27;recipes&#x27; for vendor inconsistencies; Guidewire ProNavigator needs evaluation for Agent Assist overlap. AEM latency (2-3s added on .com screens since March/April cutover) escalated as serious concern.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Evaluate Guidewire ProNavigator for Agent Assist overlap</span>
+            <button class="add-task-btn" data-task-title="Evaluate Guidewire ProNavigator for Agent Assist overlap" data-task-notes="Evaluate Guidewire ProNavigator for Agent Assist overlap">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Review Mahesh Koshi&#x27;s data questions on Agent Assist RFE</span>
+            <button class="add-task-btn" data-task-title="Review Mahesh Koshi&#x27;s data questions on Agent Assist RFE" data-task-notes="Review Mahesh Koshi&#x27;s data questions on Agent Assist RFE">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Estimation Working Group with Dan Weaver -- solidify milestones and charter</span>
+            <button class="add-task-btn" data-task-title="Estimation Working Group with Dan Weaver -- solidify milesto" data-task-notes="Estimation Working Group with Dan Weaver -- solidify milestones and charter">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>AEM latency: back the leadership story explaining fixes matter even without abandonment metric tipping</span>
+            <button class="add-task-btn" data-task-title="AEM latency: back the leadership story explaining fixes matt" data-task-notes="AEM latency: back the leadership story explaining fixes matter even without abandonment metric tipping">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 5: Jon -- Ask Me Anything -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>Jon -- Ask Me Anything</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Leadership AMA on &#x27;Member at the Center&#x27; and practical tensions. The &#x27;member value&#x27; framing gets weaponized; Best-in-Breed vs. Best-in-Suite keeps surfacing with an implicit &#x27;85% rule&#x27; for when platform solution is good enough. Arc adherence metric viewed as gameable. Mark&#x27;s stance: push back on &#x27;sloppy thinking&#x27; -- require TCO/risk/fit analysis before quoting Dan. Design resource gaps flagged under 3rd-party/offshore model.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Keep pushing back on sloppy thinking -- require TCO/risk/fit analysis before quoting Dan</span>
+            <button class="add-task-btn" data-task-title="Keep pushing back on sloppy thinking -- require TCO/risk/fit" data-task-notes="Keep pushing back on sloppy thinking -- require TCO/risk/fit analysis before quoting Dan">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Stand ready with John as conflict-resolution point for priority disputes</span>
+            <button class="add-task-btn" data-task-title="Stand ready with John as conflict-resolution point for prior" data-task-notes="Stand ready with John as conflict-resolution point for priority disputes">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Support the EA &#x27;deeper dive&#x27; Deepak/John are doing to define EA for Dan Griffiths</span>
+            <button class="add-task-btn" data-task-title="Support the EA &#x27;deeper dive&#x27; Deepak/John are doing to define" data-task-notes="Support the EA &#x27;deeper dive&#x27; Deepak/John are doing to define EA for Dan Griffiths">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 6: AEM Performance -- Red Alert -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>AEM Performance -- Red Alert</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>AEM migration degraded page load times across P&amp;C, Bank, and Life. P&amp;C Homeowners storefront now at 5+ seconds -- over the &#x27;really bad&#x27; threshold. Primary culprit: profiling logic for Pub vs. Pry routing. Senior leadership (Brock, Yinka, Sarah Cook, Suresh) treating as red alert. Four enhancements were scheduled for Friday, with additional releases through May/June/July.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Confirm Friday&#x27;s four AEM enhancements shipped successfully</span>
+            <button class="add-task-btn" data-task-title="Confirm Friday&#x27;s four AEM enhancements shipped successfully" data-task-notes="Confirm Friday&#x27;s four AEM enhancements shipped successfully">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Track AEM performance improvement trajectory -- 5+ seconds is the baseline to beat</span>
+            <button class="add-task-btn" data-task-title="Track AEM performance improvement trajectory -- 5+ seconds i" data-task-notes="Track AEM performance improvement trajectory -- 5+ seconds is the baseline to beat">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 7: Claims Ops and EA Sync -- Jessica&#x27;s Care Center Transition -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>Claims Ops and EA Sync -- Jessica&#x27;s Care Center Transition</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Jessica walking through 36-month plan for rebranded Claims Care Center (post-83% FNOL insourcing). Pivots from ramp-up survival to sustainability and premier talent pipeline. Tech gaps: Chat/Text in FNOL, Agentic AI, Knowledge Central cleanup ahead of IVA integration. Guidewire Wizard permits unlicensed staff for initial FNOL rentals but blocks on status calls -- business rule issue, not system. Quality audit feedback lags 45 days; real-time sentiment analysis is the ask.</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Schedule bi-monthly Jessica-architecture/tech roadmap sync</span>
+            <button class="add-task-btn" data-task-title="Schedule bi-monthly Jessica-architecture/tech roadmap sync" data-task-notes="Schedule bi-monthly Jessica-architecture/tech roadmap sync">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Chase Guidewire business rules path for unlicensed staff rental setups on status calls</span>
+            <button class="add-task-btn" data-task-title="Chase Guidewire business rules path for unlicensed staff ren" data-task-notes="Chase Guidewire business rules path for unlicensed staff rental setups on status calls">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Review Jessica&#x27;s plan as it solidifies for next PI</span>
+            <button class="add-task-btn" data-task-title="Review Jessica&#x27;s plan as it solidifies for next PI" data-task-notes="Review Jessica&#x27;s plan as it solidifies for next PI">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Meeting 8: Sam Interview Debrief -->
+    <details class="review-card">
+      <summary class="review-header">
+        <div class="review-title-row">
+          <h3>Sam Interview Debrief</h3>
+          <span class="review-meta"></span>
+        </div>
+        <svg class="review-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="review-body">
+        <p>Claims-domain internal candidate. Solid technical track record but interview delivery was one-line, nonchalant -- &#x27;order-taker&#x27; not architect. Benchmarked unfavorably against Tara (gold standard). Open question: reject or 6-12 month coaching track. Separate concern: can candidate survive under Dan&#x27;s high-pressure style?</p>
+        <div class="review-todos">
+          <h4>Follow-ups</h4>
+          <div class="todo-item">
+            <span>Final candidate decision: reject vs. 6-12 month coaching/mentoring path</span>
+            <button class="add-task-btn" data-task-title="Final candidate decision: reject vs. 6-12 month coaching/men" data-task-notes="Final candidate decision: reject vs. 6-12 month coaching/mentoring path">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Meet with Dan to align on interview panel perspective vs. technical track record</span>
+            <button class="add-task-btn" data-task-title="Meet with Dan to align on interview panel perspective vs. te" data-task-notes="Meet with Dan to align on interview panel perspective vs. technical track record">Add to Tasks</button>
+          </div>
+          <div class="todo-item">
+            <span>Formalize Tara as Success Profile / Interview Guide rather than another round of coaching</span>
+            <button class="add-task-btn" data-task-title="Formalize Tara as Success Profile / Interview Guide rather t" data-task-notes="Formalize Tara as Success Profile / Interview Guide rather than another round of coaching">Add to Tasks</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- TECH NEWS -->
+<section class="section" id="tech">
+  <div class="container">
+    <h2 class="section-label">Tech News</h2>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="industry">Industry</button>
+      <button class="tab-btn" data-tab="ai">AI</button>
+      <button class="tab-btn" data-tab="gadgets">Gadgets</button>
+      <button class="tab-btn" data-tab="gaming">Gaming</button>
+    </div>
+
+    <!-- INDUSTRY NEWS -->
+    <div class="tab-panel active" id="tab-industry">
+      <a href="https://techcrunch.com/2026/04/19/blue-origin-successfully-re-uses-a-new-glenn-rocket-for-the-first-time-ever/" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>Blue Origin Reuses New Glenn Rocket for First Time, but Satellite Ends Up in Wrong Orbit</h3>
+        <p>Blue Origin successfully recovered and reused the first-stage booster of its New Glenn heavy-lift rocket on its third-ever launch (NG-3), a major milestone for Jeff Bezos&#x27; space company as it works to compete with SpaceX. The mission carried a BlueBird 7 communications satellite for AST SpaceMobile, but the payload ended up in a lower-than-planned orbit due to what appears to be an upper-stage issue, meaning the satellite must be de-orbited. The booster landing marked only the second company ever (after SpaceX) to recover an orbital-class rocket booster.</p>
+        <span class="story-source">TechCrunch &middot; 2026-04-19</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-inclusivity-and-regressive-cultures/" target="_blank" class="story-card">
+          <h3>Palantir Posts Anti-DEI Manifesto Denouncing &#x27;Regressive&#x27; Workplace Cultures</h3>
+          <p>Palantir published a pointed internal document calling out what it describes as inclusivity-driven and &#x27;regressive&#x27; corporate cultures, drawing renewed scrutiny as the company deepens its work with U.S. immigration enforcement and positions itself as a defender of Western values. The move comes as Palantir&#x27;s government contracts — including a $30 million deal with ICE — have sparked ongoing controversy in the tech industry. The manifesto signals Palantir&#x27;s ideological alignment with the current administration&#x27;s policies and further distances it from mainstream Silicon Valley culture.</p>
+          <span class="story-source">TechCrunch &middot; 2026-04-19</span>
+        </a>
+        <a href="https://techcrunch.com/2026/04/19/cracks-are-starting-to-form-on-fusion-energys-funding-boom/" target="_blank" class="story-card">
+          <h3>Cracks Form in Fusion Energy&#x27;s Funding Boom as Startups Eye Early IPOs</h3>
+          <p>Despite fusion startups raising $1.6 billion in the past 12 months, tensions are emerging over whether companies like TAE Technologies and General Fusion are going public too early — before achieving scientific breakeven — risking souring public markets on fusion energy. TAE has already received $200 million from its merger with Trump Media &amp; Technology Group, while General Fusion&#x27;s SPAC deal could net $335 million, but neither company has demonstrated that its reactor produces more energy than is needed to ignite it. Industry observers at The Economist&#x27;s Fusion Fest debated whether revenue-generating side businesses are a distraction or a necessity for long-term survival.</p>
+          <span class="story-source">TechCrunch &middot; 2026-04-19</span>
+        </a>
+        <a href="https://techcrunch.com/2026/04/19/openais-existential-questions/" target="_blank" class="story-card">
+          <h3>OpenAI&#x27;s Existential Questions: Acquisitions of Hiro and TBPN Signal Push Beyond Chatbot</h3>
+          <p>TechCrunch&#x27;s Equity podcast analyzed OpenAI&#x27;s back-to-back acquisitions — personal finance startup Hiro and business talk show TBPN — as evidence the company is grappling with two core problems: building products with more revenue hooks than a chatbot, and improving its battered public image. The Hiro acqui-hire hints at a potential foray into consumer financial tools, while TBPN&#x27;s retention of editorial independence (despite falling under OpenAI&#x27;s policy and comms teams) is viewed skeptically. Both deals underscore OpenAI&#x27;s intensifying rivalry with Anthropic, which has been gaining ground with enterprise customers.</p>
+          <span class="story-source">TechCrunch &middot; 2026-04-19</span>
+        </a>
+        <a href="https://nationaltechnology.co.uk/Google_and_OpenAI_engineers_raise_500m_for_new_AI_startup.php" target="_blank" class="story-card">
+          <h3>Recursive Superintelligence Raises $500M at $4B Valuation from Google Ventures and Nvidia</h3>
+          <p>Recursive Superintelligence, a months-old AI startup co-founded by former Google DeepMind and OpenAI engineers including Richard Socher, closed an oversubscribed $500 million funding round that values the company at $4 billion pre-money. The round was led by GV (Alphabet&#x27;s venture arm) with participation from Nvidia, and was reported by the Financial Times. The company&#x27;s ambitious goal is to build an AI system capable of recursive self-improvement — improving its own intelligence without human input — though this has not yet been demonstrated to work for extended periods.</p>
+          <span class="story-source">National Technology News &middot; 2026-04-20</span>
+        </a>
+        <a href="https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/" target="_blank" class="story-card">
+          <h3>The App Store Is Booming Again, and AI Coding Tools May Be Why</h3>
+          <p>New data from Appfigures shows worldwide app releases in Q1 2026 were up 60% year-over-year across Apple&#x27;s App Store and Google Play, with iOS App Store launches up 80% alone — contradicting predictions that AI would kill the app economy. April 2026 is tracking even hotter, with total releases up 104% across both platforms compared to the same period last year. TechCrunch attributes the surge to AI-powered coding tools like Claude Code and Replit lowering the barrier to app creation, spurring what it calls a &#x27;new app gold rush.&#x27;</p>
+          <span class="story-source">TechCrunch &middot; 2026-04-18</span>
+        </a>
+        <a href="https://techcrunch.com/2026/04/18/" target="_blank" class="story-card">
+          <h3>Anthropic CPO Leaves Figma&#x27;s Board Amid Reports of Competing Design Product</h3>
+          <p>Anthropic&#x27;s Chief Product Officer stepped down from Figma&#x27;s board of directors following reports that Anthropic was preparing to launch Claude Design, a product that would directly compete with Figma&#x27;s AI-powered design workflows. The departure highlights the increasingly competitive dynamics between AI labs and traditional design tooling companies as large language models expand into creative and productivity workflows. Anthropic&#x27;s move is seen as part of a broader strategy to embed Claude across enterprise software categories.</p>
+          <span class="story-source">TechCrunch &middot; 2026-04-18</span>
+        </a>
+        <a href="https://9to5google.com/2026/04/18/" target="_blank" class="story-card">
+          <h3>Samsung Galaxy S26 Vertical Camera Stance Draws Criticism Despite Being &#x27;Core Identity&#x27;</h3>
+          <p>Samsung has doubled down on the vertical camera strip design for the Galaxy S26 lineup, calling it a &#x27;core identity&#x27; element — even as users and reviewers continue to criticize the layout for making the phone difficult to balance on flat surfaces. The S26&#x27;s camera bar runs the full height of the device&#x27;s rear, a design choice Samsung says is intentional to differentiate the flagship lineup. Critics argue the aesthetic imposes a real-world usability tax, especially for tabletop use cases.</p>
+          <span class="story-source">9to5Google &middot; 2026-04-18</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- AI UPDATES -->
+    <div class="tab-panel" id="tab-ai">
+      <a href="https://techcrunch.com/2026/04/18/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>Anthropic Launches Claude Design for Creating Quick Visuals Without Design Skills</h3>
+        <p>Anthropic unveiled Claude Design, a new product aimed at founders, product managers, and other non-designers who need to generate presentation-ready visuals, mockups, and pitch decks without relying on Figma or hiring a designer. The product positions Anthropic directly against AI-powered design tools from Canva, Microsoft, and others in the growing enterprise productivity market. Pricing and API availability were not disclosed at launch, but the product is Anthropic&#x27;s first dedicated move into visual creation tools beyond conversational AI.</p>
+        <span class="story-source">TechCrunch &middot; 2026-04-18</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://techcrunch.com/2026/04/18/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/" target="_blank" class="story-card">
+          <h3>Physical Intelligence Says Its New Robot Brain π0.7 Can Figure Out Tasks It Was Never Taught</h3>
+          <p>San Francisco robotics startup Physical Intelligence debuted its π0.7 model, a new AI robot brain capable of &#x27;compositional generalization&#x27; — combining skills learned in separate contexts to solve novel tasks it was never explicitly trained for, such as making coffee or folding laundry after only observing the task once. The milestone is seen as a significant step toward a general-purpose robotic brain, as opposed to the brittle, task-specific training that has defined robotics AI to date. Physical Intelligence, valued at $5.6 billion and backed by over $1 billion in funding, says the model matches specialist systems across complex benchmarks while gaining broader flexibility.</p>
+          <span class="story-source">TechCrunch &middot; 2026-04-18</span>
+        </a>
+        <a href="https://techbytes.app/tech-pulse-daily/2026/april/20/" target="_blank" class="story-card">
+          <h3>Google Chrome Launches AI Mode With On-Device Nano Models for Cross-Tab Reasoning</h3>
+          <p>Google launched AI Mode in Chrome, a deep browser integration that uses on-device Gemini Nano models optimized via WebGPU to enable &#x27;cross-tab reasoning&#x27; — synthesizing information across multiple open browser tabs into actionable tasks, calendar events, and summaries. Unlike a conventional sidebar assistant, AI Mode introduces &#x27;Chrome Skills,&#x27; letting developers build one-click AI tools that interact semantically with web page elements. By processing on-device, Google delivers near-zero latency between user intent and model execution while keeping data local.</p>
+          <span class="story-source">Tech Bytes &middot; 2026-04-20</span>
+        </a>
+        <a href="https://techbytes.app/tech-pulse-daily/2026/april/20/" target="_blank" class="story-card">
+          <h3>OpenAI Unveils GPT-Rosalind: A Frontier Reasoning Model for Life Sciences and Drug Discovery</h3>
+          <p>OpenAI announced GPT-Rosalind, a new frontier reasoning model tuned specifically for life sciences, in partnership with Amgen, Moderna, and the Allen Institute. Named after Rosalind Franklin, the model handles non-textual biological data including genetic sequences, molecular structures, and protein folding patterns with high precision, and supports &#x27;closed-loop experimentation&#x27; where AI designs a hypothesis and lab automation executes it. Early pilot programs show the model could reduce protein synthesis costs by up to 40%.</p>
+          <span class="story-source">Tech Bytes &middot; 2026-04-20</span>
+        </a>
+        <a href="https://9to5google.com/2026/04/18/" target="_blank" class="story-card">
+          <h3>Gemini App Bug Rolls Back Several Recent Features for Google Users</h3>
+          <p>A bug in the Gemini app caused a temporary rollback of several features that had recently been released to users, creating confusion and frustration among the AI assistant&#x27;s user base. Google acknowledged the issue, which affected Gemini&#x27;s functionality across Android and iOS. The incident underscores the challenges of rapidly iterating on AI consumer products while maintaining stability in widely deployed applications.</p>
+          <span class="story-source">9to5Google &middot; 2026-04-18</span>
+        </a>
+        <a href="https://techcrunch.com/2026/04/18/" target="_blank" class="story-card">
+          <h3>&#x27;Tokenmaxxing&#x27; Is Making Developers Less Productive Than They Think, Says TechCrunch</h3>
+          <p>A TechCrunch analysis warned that &#x27;tokenmaxxing&#x27; — the practice of padding AI prompts with large amounts of context hoping larger inputs yield better outputs — is giving developers a false sense of productivity while often producing noisier, less accurate results. The piece argues that the instinct to cram context windows with irrelevant material counteracts the precision gains that large context windows are designed to enable. The report is drawing debate among AI developers on how to optimize LLM prompt design.</p>
+          <span class="story-source">TechCrunch &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.theverge.com/archives/tech/2026/4/19" target="_blank" class="story-card">
+          <h3>Cloudflare and GoDaddy Partner to Enable Publisher Control Over AI Web Crawlers</h3>
+          <p>Cloudflare and GoDaddy announced a partnership to integrate Cloudflare&#x27;s AI Crawl Control tool into GoDaddy&#x27;s web hosting platform, giving publishers granular control over how AI bots and web crawlers access their content — including the option to block crawlers outright or require payment. The integration extends Cloudflare&#x27;s initiative, started last year, of blocking AI crawlers by default unless publishers explicitly permit them. The deal represents a growing industry push to let content creators decide whether and how their work can be used to train AI models.</p>
+          <span class="story-source">The Verge &middot; 2026-04-19</span>
+        </a>
+        <a href="https://www.theverge.com/archives/tech/2026/4/19" target="_blank" class="story-card">
+          <h3>Anthropic Expands Google and Broadcom Partnership to Multiple Gigawatts of Next-Gen TPU Compute</h3>
+          <p>Anthropic announced a major expansion of its compute agreement with Google and Broadcom, adding multiple gigawatts of next-generation TPU capacity expected to come online starting in 2027 to power its frontier Claude models. A Broadcom SEC filing indicates the deal covers 3.5 gigawatts of capacity, which will be mostly U.S.-based and extends Anthropic&#x27;s $50 billion commitment to domestic AI infrastructure. The announcement coincides with Anthropic&#x27;s run-rate revenue surpassing $30 billion, reflecting explosive demand for enterprise Claude deployments.</p>
+          <span class="story-source">The Verge &middot; 2026-04-19</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- CONSUMER ELECTRONICS AND GADGETS -->
+    <div class="tab-panel" id="tab-gadgets">
+      <a href="https://www.macrumors.com/archive/2026/04/" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>macOS 27 Will Mark the End of an Era: Intel Macs Will Not Be Supported</h3>
+        <p>MacRumors confirmed that the upcoming macOS 27, expected to be announced at WWDC 2026 in June and released in fall 2026, will only run on Apple silicon Macs — meaning all Intel-based Mac models will be left behind after macOS 26 Tahoe. Apple signaled the end of Intel compatibility at WWDC 2025, when it revealed macOS 26 was the last version for Intel hardware. While Intel Macs will continue to function and receive some security updates, they will miss out on all future features and performance improvements tied to Apple&#x27;s M-series chips.</p>
+        <span class="story-source">MacRumors &middot; 2026-04-18</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://www.macrumors.com/2026/04/18/apple-says-carplay-ultra-is-coming-to-these-vehicle-brands/" target="_blank" class="story-card">
+          <h3>Apple Says CarPlay Ultra Is Coming to Hyundai, Kia, and Genesis Later in 2026</h3>
+          <p>Apple confirmed that CarPlay Ultra — currently limited to Aston Martin luxury vehicles since its May 2025 launch — is on track to expand to Hyundai, Kia, and Genesis models in the second half of 2026, with Bloomberg&#x27;s Mark Gurman reporting that at least one major Hyundai or Kia vehicle will be the first mainstream-priced CarPlay Ultra option. The rollout has been slower than many expected; several originally committed brands including Audi, Mercedes-Benz, and Volvo have since dropped out. Apple&#x27;s CarPlay Ultra deeply integrates iPhone functions into the vehicle&#x27;s entire dashboard, replacing native instrument clusters.</p>
+          <span class="story-source">MacRumors &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.androidauthority.com/news/" target="_blank" class="story-card">
+          <h3>Amazon&#x27;s New Fire TV Stick HD Blocks Sideloading With Proprietary Vega OS</h3>
+          <p>Amazon confirmed that its new Fire TV Stick HD — launching April 29 at $34.99 — will not support sideloading or installation of third-party apps outside the Amazon Appstore, marking a significant departure from previous Fire TV devices. The product listing now explicitly reads: &#x27;For enhanced security, this device prevents sideloading or installing apps from unknown sources.&#x27; Amazon achieved this lockdown by replacing the Android-based operating system with its own proprietary Vega OS, which first appeared on the Fire TV Stick 4K Select.</p>
+          <span class="story-source">Android Authority &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.androidauthority.com/news/" target="_blank" class="story-card">
+          <h3>Samsung Galaxy Z TriFold Successor May Be in the Works With a New Hinge Design</h3>
+          <p>Android Authority reports that Samsung is developing a follow-up to the Galaxy Z TriFold, featuring an updated hinge mechanism aimed at addressing durability and crease concerns on the previous model. While full specifications have not been confirmed, the new hinge design suggests Samsung is iterating on the three-panel foldable form factor rather than abandoning it after the Z TriFold&#x27;s limited launch. The TriFold format — which unfolds to a tablet-sized display — remains rare in the market, and a successor would push the category further into mainstream consideration.</p>
+          <span class="story-source">Android Authority &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.bgr.com/2146934/dont-wait-upgrade-macbook-why/" target="_blank" class="story-card">
+          <h3>Don&#x27;t Wait to Upgrade Your MacBook in 2026: Here&#x27;s Why BGR Says Now Is the Time</h3>
+          <p>BGR argues that the current MacBook lineup — including the new M5 MacBook Air, M5 Pro/Max MacBook Pro, and budget MacBook Neo — represents the best value window to upgrade before prices potentially rise further due to tariff pressures and the RAM shortage affecting the broader PC market. Apple&#x27;s M5 MacBook Air starts at $1,099 (up $100 from the M4), while the MacBook Neo offers an entry point at just $599 for buyers willing to skip backlit keys and a haptic trackpad. With the MacBook Neo selling out through April and Intel Mac support ending with macOS 26, BGR says the case for waiting has weakened significantly.</p>
+          <span class="story-source">BGR &middot; 2026-04-19</span>
+        </a>
+        <a href="https://goodereader.com/blog/bigme-news/first-look-at-the-bigme-hibreak-plus-e-ink-smartphone" target="_blank" class="story-card">
+          <h3>Bigme Hibreak Plus E Ink Smartphone Launches for $249 on April 20</h3>
+          <p>The Bigme Hibreak Plus, an E Ink smartphone featuring a 6.13-inch Kaleido 3 color e-paper display with stylus support, launched today at $249 — offering a full Android 14 experience with access to the Google Play Store on a display designed for eye comfort and reduced screen fatigue. The phone supports 4G connectivity and targets users seeking a low-stimulation alternative to conventional OLED smartphones without sacrificing app compatibility. Bigme is also reportedly planning a dual-screen Hibreak Dual model with an OLED on one side and E Ink on the other.</p>
+          <span class="story-source">Good e-Reader &middot; 2026-04-19</span>
+        </a>
+        <a href="https://www.bgr.com/2146710/costco-electronics-that-should-be-on-your-radar-in-april-2026/" target="_blank" class="story-card">
+          <h3>4 Costco Electronics Worth Buying in April 2026: Apple Studio Display, Joy-Con 2, and More</h3>
+          <p>BGR highlights four consumer electronics deals available at Costco in April 2026, led by the new 27-inch Apple Studio Display at $1,549.99 (saving $50 vs. Apple direct) and Nintendo Switch 2 Joy-Con 2 controllers in light purple and green for $89.99 — $10 less than Nintendo&#x27;s own store. Rounding out the list are the SHOKZ OpenFit 2 earphones with 11-hour battery life and an MSI MAG 2720P QD-OLED 240Hz gaming monitor for $399.99, undercutting comparable panels by $100. All four represent the best current prices for their respective products.</p>
+          <span class="story-source">BGR &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.theverge.com/archives/tech/2026/4/19" target="_blank" class="story-card">
+          <h3>Google&#x27;s Latest Affordable Pixel Arrives in Japan With Exclusive Heralbony Collab Finish</h3>
+          <p>Google&#x27;s most recent budget Pixel phone officially launched in Japan — over a month after its global release elsewhere — in an exclusive &#x27;isai blue&#x27; colorway designed in collaboration with Heralbony, a Japanese organization that works with artists with intellectual disabilities. The Japan-exclusive finish adds a meaningful cultural dimension to the device&#x27;s regional debut and continues Google&#x27;s pattern of offering market-specific variants of its Pixel lineup. The Japanese launch is paired with carrier support from local operators.</p>
+          <span class="story-source">The Verge &middot; 2026-04-19</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- GAMING NEWS -->
+    <div class="tab-panel" id="tab-gaming">
+      <a href="https://www.theverge.com/news/610817/indiana-jones-and-the-great-circle-ps5-release-date" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">Featured</span>
+        <h3>Indiana Jones and the Great Circle Now Available on PS5 — PS5-Exclusive Features Detailed</h3>
+        <p>MachineGames&#x27; critically acclaimed Indiana Jones and the Great Circle officially launched on PlayStation 5 on April 17, bringing the Xbox and PC hit to Sony&#x27;s platform with PS5-specific enhancements including DualSense haptic feedback, adaptive triggers, and updated visual fidelity modes. The game, which originally debuted in December 2025, scored highly on Xbox and PC and carries its strong reputation to a new audience of PlayStation players who missed the initial release. Early PS5 reactions point to the haptic feedback as a standout addition that deepens the sense of whip-cracking and environmental immersion.</p>
+        <span class="story-source">The Verge &middot; 2026-04-18</span>
+      </a>
+      <div class="story-grid">
+        <a href="https://www.tomsguide.com/gaming/pragmata-review" target="_blank" class="story-card">
+          <h3>Pragmata Post-Launch Coverage: Capcom&#x27;s Sci-Fi Shooter Earns Metascore of 86 Across Platforms</h3>
+          <p>Following Capcom&#x27;s Pragmata launch on April 17, post-launch coverage is confirming it as one of 2026&#x27;s best-reviewed games, with a Metacritic score of 86 on PS5 (based on 93 reviews) and 87-88 across Xbox and Switch 2 — making it Capcom&#x27;s second-best reviewed game of the year behind Resident Evil Requiem. Reviews praise the innovative hacking-and-shooting combat loop, the dynamic between protagonists Hugh and android Diana, and an earnest sci-fi story set on a hostile lunar research station. Tom&#x27;s Guide called it &#x27;a breath of fresh air&#x27; that &#x27;proves there&#x27;s still innovation in the AAA space.&#x27;</p>
+          <span class="story-source">Tom&#x27;s Guide &middot; 2026-04-18</span>
+        </a>
+        <a href="https://business20channel.tv/nvidia-capcom-launch-cloud-gaming-push-with-pragmata-2026-18-april-2026" target="_blank" class="story-card">
+          <h3>NVIDIA Launches Pragmata Day-and-Date on GeForce NOW, Expands Ultimate Tier to India</h3>
+          <p>NVIDIA announced that Capcom&#x27;s Pragmata launched simultaneously on GeForce NOW alongside its console and PC release, leveraging DLSS 4 and ray-tracing technology to deliver the full AAA experience via cloud streaming without hardware requirements. NVIDIA also used the occasion to launch its GeForce NOW Ultimate membership in India for the first time, marking its first premium cloud gaming tier available to Indian players. The strategy represents a growing trend of day-one cloud availability for major releases, removing the traditional hardware barrier to AAA gaming.</p>
+          <span class="story-source">Business 2.0 News &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.ign.com/articles/video-game-release-dates-ps4-ps5-xbox-one-series-x-nintendo-switch" target="_blank" class="story-card">
+          <h3>Diablo IV: Lord of Hatred Preview Coverage Ramps Up Ahead of April 28 Launch</h3>
+          <p>Preview coverage is intensifying for Diablo IV&#x27;s second expansion, Lord of Hatred, launching April 28 on all platforms, with outlets highlighting the new Skovos Isles region, two new classes (Paladin and Warlock), the War Plans endgame activity system, and a level cap increase to 70. The expansion is widely regarded as a significantly larger content drop than the first expansion, Vessel of Hatred, and introduces quality-of-life changes like loot filters, a skill tree overhaul, the returning Horadric Cube, and fishing as a side activity. The Paladin class is already available for players who pre-purchase the expansion.</p>
+          <span class="story-source">IGN &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/" target="_blank" class="story-card">
+          <h3>GTA 6 November 19 Release Date Holds Firm After April Delay Rumor Debunked</h3>
+          <p>A rumor circulating in April 2026 claiming GTA 6 had a &#x27;broken save system&#x27; that could trigger another delay was directly debunked by Kotaku&#x27;s Zack Zwiezen, who confirmed with Rockstar developers that the claim was entirely unfounded. GTA 6 remains officially confirmed for November 19, 2026 exclusively on PS5 and Xbox Series X/S, with Take-Two&#x27;s launch marketing campaign still on track to begin in Summer 2026 alongside an expected third trailer. The game entered Rockstar&#x27;s current fiscal year on April 1, adding investor pressure against any further delay.</p>
+          <span class="story-source">Video Games Chronicle &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=fEeTrM4DGnQ" target="_blank" class="story-card">
+          <h3>MMO Roundup: FFXIV x Jollibee Crossover, Albion Online Xbox Launch, and MapleStory&#x27;s 21st Anniversary</h3>
+          <p>Several major MMO updates are coming in the week following April 19: Final Fantasy XIV is launching a limited-time Jollibee crossover (April 21–May 31) with in-game emotes unlocked through themed meal purchases; Albion Online arrives on Xbox Series X/S on April 21 with full cross-platform progression; and MapleStory&#x27;s v.268 update brings its 21st Anniversary Maple University event with themed mini-games and rewards. Dungeon Fighter Online&#x27;s April 21 update also delivers the Delezie Raid and a Dark Templar class rework, while Dragonica Origin&#x27;s Chapter 4.0 drops April 22 with the Black Claw Nest dungeon.</p>
+          <span class="story-source">YouTube / Gaming Hardcore &middot; 2026-04-19</span>
+        </a>
+        <a href="https://www.nintendolife.com/news/2026/04/digital-foundry-delivers-its-tech-review-of-pragmata-on-switch-2" target="_blank" class="story-card">
+          <h3>Digital Foundry Delivers Mixed Switch 2 Performance Verdict for Pragmata</h3>
+          <p>Digital Foundry&#x27;s technical deep-dive on the Nintendo Switch 2 version of Pragmata found an unlocked frame rate that typically runs between 30-40fps in busier areas and up to 50fps indoors, with no dedicated performance mode — a limitation compared to the locked 60fps on PS5. The Switch 2 uses DLSS upscaling from an internal 540p (docked) or 360p (handheld) resolution, which DF describes as &#x27;arguably competitive&#x27; against PS5 output, and the console outperforms Xbox Series S in visual quality despite some lighting and texture cutbacks. The analysis concludes that the port is functional and respectable given the hardware gap, but demanding players will prefer the PS5 version.</p>
+          <span class="story-source">Nintendo Life &middot; 2026-04-18</span>
+        </a>
+        <a href="https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/" target="_blank" class="story-card">
+          <h3>Lunar Remastered Collection Launches April 18 for PS5, Xbox, and PC</h3>
+          <p>The Lunar Remastered Collection arrived on April 18 for PlayStation 5, Xbox Series X/S, and PC, bringing updated versions of the beloved JRPG classics Lunar: The Silver Star and Lunar: Eternal Blue to modern platforms for the first time in over a decade. The collection features remastered visuals, updated audio, and quality-of-life improvements while preserving the original story and gameplay of both titles. The release has been welcomed by long-time fans as an overdue revival of a franchise that helped define the PlayStation RPG era.</p>
+          <span class="story-source">Turtle Beach / Video Games Chronicle &middot; 2026-04-18</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INSURETECH -->
+<section class="section section-muted" id="insuretech">
+  <div class="container">
+    <h2 class="section-label">InsureTech</h2>
+    <div class="story-grid full-grid">
+      <a href="https://www.insurtech.me/blog/2026/4/18/5synj3qdv9zjfgcnxeavcx22398u0c" target="_blank" class="story-card story-featured">
+        <span class="story-kicker">2026-04-18</span>
+        <h3>Insurance and InsurTech Investments Report: April 13–18, 2026</h3>
+        <p>InsurTech.ME&#x27;s weekly deal tracker published April 18 covers a slate of funding rounds, led by Sompo Holdings joining Zego&#x27;s $28M round and forging a strategic digital motor partnership to co-develop telematics and AI-driven usage-based insurance products for Japan. The report also covers VictoryRe and NovaRe, a PE-backed reinsurance platform and collateralized sidecar launched by New Mountain Capital, and a $1.3M seed for Swiss travel insurTech Insurteam. The overarching theme: investors are aligning underwriting, distribution, and capital into integrated AI-powered stacks rather than backing isolated front-end plays.</p>
+        <span class="story-source">InsurTech.ME</span>
+      </a>
+      <a href="https://www.prweb.com/releases/cloverleaf-analytics-unveils-2026-insurance-decision-intelligence-platform-302740205.html" target="_blank" class="story-card">
+        <span class="story-kicker">2026-04-19</span>
+        <h3>Cloverleaf Analytics Unveils 2026 Insurance Decision Intelligence Platform</h3>
+        <p>Cloverleaf Analytics launched its 2026 Insurance Decision Intelligence Platform on April 19, offering P&amp;C carriers an end-to-end automated data pipeline from source ingestion to Snowflake powered by AI — compressing processes that previously took days into minutes. Key features include intelligent field matching, a visual rule builder, automated ETL script generation, and AI-powered data transformation suggestions. The company simultaneously announced its listing in Everest Group&#x27;s Top 50 P&amp;C Insurance Technology Providers 2026 and new live deployments with Pearl Holding Group on Guidewire InsuranceNow claims.</p>
+        <span class="story-source">PR Newswire / PRWeb</span>
+      </a>
+      <a href="https://www.prnewswire.com/apac/news-releases/huawei-cloud-strengthens-thailands-insurance-industry-with-next-generation-digital-technologies-302745912.html" target="_blank" class="story-card">
+        <span class="story-kicker">2026-04-19</span>
+        <h3>Huawei Cloud Strengthens Thailand&#x27;s Insurance Industry with Next-Generation Digital Technologies</h3>
+        <p>Huawei Cloud Thailand co-hosted an executive forum with The Thai Life Assurance Association on April 19, drawing 30+ senior insurance leaders to explore cloud-native and AI-driven modernization of core insurance systems. The event highlighted Huawei&#x27;s Digital Core Insurance Solution — enabling migration from legacy AS/400 systems to cloud-native architectures — and its GaussDB enterprise database for mission-critical insurance workloads. The initiative underscores accelerating Asia-Pacific insurer investment in AI and cloud infrastructure as carriers face rising data volumes and evolving customer expectations.</p>
+        <span class="story-source">PR Newswire</span>
+      </a>
+      <a href="https://www.latimes.com/b2b/ai-technology/story/2026-04-19/insurance-saas-solutions-digital-transformation" target="_blank" class="story-card">
+        <span class="story-kicker">2026-04-19</span>
+        <h3>SaaS Helps the Insurance Industry Cover the Future</h3>
+        <p>A Los Angeles Times feature published April 19 examines how Software-as-a-Service is displacing legacy on-premise systems across the insurance value chain, with Southern California emerging as a hub for customer-facing SaaS innovation. The piece spotlights carriers using cloud-native platforms from Guidewire and insurtech firms like Hippo and Metromile to unlock real-time analytics, usage-based pricing, and embedded data capabilities. Industry analysts project 2026 as an inflection year in which compliance, AI, embedded distribution, and SaaS converge from isolated initiatives into a unified modern insurance operating model.</p>
+        <span class="story-source">Los Angeles Times</span>
+      </a>
+      <a href="https://www.insurancebusinessmag.com/us/news/catastrophe/zurich-taps-cat-bond-market-with-150m-turicum-re-deal-572238.aspx" target="_blank" class="story-card">
+        <span class="story-kicker">2026-04-20</span>
+        <h3>Zurich Taps Cat Bond Market with $150M Turicum Re Deal</h3>
+        <p>Zurich Insurance Group closed a $150 million, three-year catastrophe bond — the Turicum Re Ltd. Series 2026-1 — on April 20, marking its first sponsored cat bond since the Lakeside Re III issuance in December 2012. The bond provides Zurich American Insurance Company with fully collateralized, per-occurrence reinsurance protection against U.S. named storms and earthquakes, and closed at target capacity below initial price guidance. The deal reflects Zurich&#x27;s strategy to diversify its catastrophe reinsurance program with alternative capital as outstanding ILS volume approaches $55 billion globally.</p>
+        <span class="story-source">Insurance Business Magazine</span>
+      </a>
+      <a href="https://www.prnewswire.com/news-releases/enrollhere-inc-announces-investment-from-aquiline-to-advance-technology-for-medicare-advantage-distribution-302747039.html" target="_blank" class="story-card">
+        <span class="story-kicker">2026-04-20</span>
+        <h3>EnrollHere Inc. Announces Investment from Aquiline to Advance Technology for Medicare Advantage Distribution</h3>
+        <p>EnrollHere Inc., an AI-powered platform and system of record for insurance distribution, announced on April 20 a strategic investment from Aquiline to accelerate its Medicare Advantage distribution technology. The capital will fund expansion of EnrollHere&#x27;s AI Intelligence Layer, unify its platform capabilities across marketing, call-center infrastructure, agent activity, compliance oversight, policy lifecycle management, commissions, and financial payments under its EnrollHere Complete™ product. The investment positions EnrollHere as infrastructure for Medicare Advantage distribution amid rising regulatory complexity and market demand for enrollment quality and lifetime value optimization.</p>
+        <span class="story-source">PR Newswire</span>
+      </a>
+      <a href="https://letsdatascience.com/news/insurers-debate-funding-for-law-firm-ai-tools-d8c3c2a3" target="_blank" class="story-card">
+        <span class="story-kicker">2026-04-20</span>
+        <h3>AI for the Defense: Should Insurers or Law Firms Pay?</h3>
+        <p>A CLM-commissioned survey published April 20 by Suite 200 Solutions reveals deep disagreement among claims and litigation executives over who should fund AI tools used by defense law firms in liability claims: exactly 50% say law firms should pay, 50% report they are still working out a policy, and 0% indicated carriers should contribute. The findings also show 83.1% of carriers have never been asked to help defray AI costs, and 50.8% say defense firms have rarely or never sought permission to use AI. Analysts warn that unresolved cost-allocation and billing-model friction is slowing AI adoption in claims defense at the same time plaintiff firms gain asymmetric AI advantages — pushing insurers toward revised panel-counsel contracts and vendor auditability requirements.</p>
+        <span class="story-source">Let&#x27;s Data Science (CLM / Suite 200 Solutions Survey)</span>
+      </a>
+      <a href="https://www.insurancejournal.com/news/international/2026/04/20/866538.htm" target="_blank" class="story-card">
+        <span class="story-kicker">2026-04-20</span>
+        <h3>How Niche Parametric Insurance Shielded Bad Bunny From Bad Weather</h3>
+        <p>An Insurance Journal feature published April 20 explores how bespoke parametric insurance paired with on-site weather monitoring is enabling concert promoters and event organizers to cover hyper-local, short-window weather risks that traditional indemnity policies struggle to price. The story highlights Descartes and Lockton&#x27;s work insuring a Bad Bunny concert in Colombia, where on-site weather stations provided the granular data needed to underwrite a policy against heavy rain during a few-hour performance window. Underwriters note that better real-time data reduces uncertainty, lowers costs for clients, and is opening a growing market for parametric event weather products beyond traditional catastrophe coverage.</p>
+        <span class="story-source">Insurance Journal</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="section" id="history">
+  <div class="container">
+    <h2 class="section-label">On This Day &middot; April 20</h2>
+    <div class="history-list">
+      <div class="hist-row"><span class="hist-year">1303</span><div><strong>Sapienza University of Rome Founded</strong><p>Pope Boniface VIII issued a papal bull establishing the Sapienza University of Rome, making it one of the oldest universities in the world. It would grow to become one of Europe&#x27;s largest academic institutions.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1653</span><div><strong>Cromwell Dissolves the Rump Parliament</strong><p>Oliver Cromwell forcibly dissolved England&#x27;s Rump Parliament, ending the Long Parliament that had sat since 1640. This act paved the way for the Protectorate and Cromwell&#x27;s personal rule over the Commonwealth.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1770</span><div><strong>Captain Cook Arrives in Australia</strong><p>British explorer Captain James Cook arrived at Botany Bay in New South Wales, becoming one of the first Europeans to make contact with the eastern coast of Australia. His voyage would have profound consequences for the future colonization of the continent.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1792</span><div><strong>France Declares War, Starting the French Revolutionary Wars</strong><p>Revolutionary France declared war against Austria and Prussia, launching the French Revolutionary Wars that would engulf much of Europe for over two decades. The conflict ultimately gave rise to Napoleon Bonaparte&#x27;s ascent to power.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1841</span><div><strong>Poe Publishes First Modern Detective Story</strong><p>Edgar Allan Poe&#x27;s &#x27;The Murders in the Rue Morgue&#x27; was published in Graham&#x27;s Magazine, introducing detective C. Auguste Dupin and pioneering the detective fiction genre. The story is widely regarded as the first modern detective story in literary history.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1862</span><div><strong>Pasteur and Bernard Complete Pasteurization Experiment</strong><p>Louis Pasteur and Claude Bernard completed the first successful pasteurization test, disproving the long-held theory of spontaneous generation. The experiment demonstrated that microorganisms in liquids could be killed by heat, laying the groundwork for modern food safety and germ theory.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1902</span><div><strong>Curies Isolate Radium Chloride</strong><p>Pierre and Marie Curie successfully isolated radium chloride, confirming the existence of the radioactive element radium. The achievement earned the couple the Nobel Prize in Physics the following year and revolutionized the understanding of atomic science.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1912</span><div><strong>Fenway Park and Tiger Stadium Open</strong><p>Both Fenway Park in Boston and Navin Field (later Tiger Stadium) in Detroit opened on the same day, each hosting their first professional baseball games. Fenway Park remains the oldest active ballpark in Major League Baseball.</p></div></div>
+      <div class="hist-row"><span class="hist-year">1972</span><div><strong>Apollo 16 Lands on the Moon</strong><p>NASA&#x27;s Apollo 16 Lunar Module Orion, commanded by John Young with Charles Duke as pilot, touched down on the Moon&#x27;s Descartes Highlands. The mission was the fifth crewed lunar landing and the first to explore a highlands region of the Moon.</p></div></div>
+      <div class="hist-row"><span class="hist-year">2010</span><div><strong>Deepwater Horizon Explosion</strong><p>The Deepwater Horizon oil drilling rig exploded in the Gulf of Mexico, killing eleven workers and triggering the largest accidental marine oil spill in history. The BP-operated well gushed for 87 days, releasing an estimated 4.9 million barrels of oil before it was finally capped.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DAILY LAB -->
+<section class="section section-muted" id="lab">
+  <div class="container">
+    <h2 class="section-label">Daily Lab</h2>
+    <div class="lab-section">
+      <div class="lab-card">
+        <header class="lab-header">
+          <h2>Daily Lab &ndash; 60 Minutes After 8 PM</h2>
+          <p class="lab-subtitle">Coding / Productivity / Home Tech</p>
+        </header>
+
+        <div class="lab-intent lab-block">
+          <h3 class="lab-block-title">Intent (1&ndash;2 lines)</h3>
+          <p class="lab-block-help">Tonight&rsquo;s focus:</p>
+          <div class="lab-note-area" contenteditable="true">Developer tooling -- build a VS Code snippet library for Architecture Decision Records and explore Antigravity for code generation</div>
+        </div>
+
+        <div class="lab-block">
+          <h3 class="lab-block-title">Block 1 &ndash; Coding / Dev Tools (20 min)</h3>
+          <p class="lab-block-help">Tiny artifact to ship:</p>
+          <div class="lab-note-area" contenteditable="true">Create a VS Code snippet file (.code-snippets) with 3 ADR templates: lightweight (1-pager), standard (with alternatives analysis), and emergency (expedited decision). Test tab-stop navigation and variable substitution.</div>
+          <p class="lab-block-help lab-inline">Tools: VS Code, Antigravity</p>
+        </div>
+
+        <div class="lab-block">
+          <h3 class="lab-block-title">Block 2 &ndash; Productivity (15 min)</h3>
+          <p class="lab-block-help">Friction to remove:</p>
+          <div class="lab-note-area" contenteditable="true">No standardized way to capture architecture decisions inline while coding -- decisions live in separate docs disconnected from the codebase</div>
+          <p class="lab-block-help lab-inline">New checklist / template / shortcut:</p>
+          <div class="lab-note-area" contenteditable="true">Create a VS Code keybinding that triggers ADR snippet insertion + auto-fills date and author fields. Test the workflow end-to-end.</div>
+        </div>
+
+        <div class="lab-block">
+          <h3 class="lab-block-title">Block 3 &ndash; Home / Consumer Tech (10 min)</h3>
+          <p class="lab-block-help">Device / system: Nest thermostat + Google Home</p>
+          <div class="lab-note-area" contenteditable="true">Set up a Nest thermostat schedule with two profiles: work-from-home (occupied 7AM-6PM, 72F) and office day (away 7AM-6PM, 68F). Test switching between profiles via Google Home voice command.</div>
+          <p class="lab-block-help lab-inline">Experiment or tweak:</p>
+          <div class="lab-note-area" contenteditable="true"></div>
+        </div>
+
+        <div class="lab-block lab-wrap">
+          <h3 class="lab-block-title">Wrap&dash;up (15 min)</h3>
+          <p class="lab-block-help">What I built or changed:</p>
+          <div class="lab-note-area" contenteditable="true"></div>
+          <p class="lab-block-help">What I&rsquo;ll test tomorrow:</p>
+          <div class="lab-note-area" contenteditable="true"></div>
+          <p class="lab-block-help">Backlog items added (if any):</p>
+          <div class="lab-note-area" contenteditable="true"></div>
+        </div>
+        <div class="lab-actions">
+          <button id="lab-save-btn" class="lab-save-btn">Save to Sheets</button>
+          <span id="lab-status" class="lab-status"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Daily Brief &middot; April 20, 2026 at 6:30 AM CDT</span>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
