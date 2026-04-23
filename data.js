@@ -1,22 +1,17 @@
 const EMBEDDED_CALENDAR = {
   "events": [
-    {"title":"TF Standup","start":"8:00 AM","end":"9:00 AM","start_iso":"2026-04-22T08:00:00-05:00","end_iso":"2026-04-22T09:00:00-05:00","description":"Meeting prep: what our architects are working on, Deepak's 3 asks","location":"CONF SAT HO Grace Hopper"},
-    {"title":"Arch Forum Panel Review Meeting","start":"9:00 AM","end":"10:30 AM","start_iso":"2026-04-22T09:00:00-05:00","end_iso":"2026-04-22T10:30:00-05:00","description":"Zoom","location":""},
-    {"title":"Weekly: Horizontal Platform WG","start":"9:30 AM","end":"10:00 AM","start_iso":"2026-04-22T09:30:00-05:00","end_iso":"2026-04-22T10:00:00-05:00","description":"Zoom","location":""},
-    {"title":"Bi-weekly - 1:1 w/ Deepak","start":"10:30 AM","end":"10:55 AM","start_iso":"2026-04-22T10:30:00-05:00","end_iso":"2026-04-22T10:55:00-05:00","description":"Meeting Prep: EAMS, architecture as code, Dan Griffiths asks, products and services, TD backlog, tech acquisition workflows","location":""},
-    {"title":"Synergy Studio Tech Decision","start":"11:00 AM","end":"11:30 AM","start_iso":"2026-04-22T11:00:00-05:00","end_iso":"2026-04-22T11:30:00-05:00","description":"Zoom","location":""},
-    {"title":"EA Follow-up with Michael Lessor","start":"11:30 AM","end":"11:55 AM","start_iso":"2026-04-22T11:30:00-05:00","end_iso":"2026-04-22T11:55:00-05:00","description":"Meeting prep: review summary from last meeting with Michael Lessor","location":""},
-    {"title":"Virtual lunch/skip level | Deepak with LoB Architects","start":"12:00 PM","end":"12:50 PM","start_iso":"2026-04-22T12:00:00-05:00","end_iso":"2026-04-22T12:50:00-05:00","description":"Zoom","location":""},
-    {"title":"Dan/Mark Sync","start":"1:00 PM","end":"1:30 PM","start_iso":"2026-04-22T13:00:00-05:00","end_iso":"2026-04-22T13:30:00-05:00","description":"Meeting prep: review past meetings in the last two weeks regarding ServiceNow, ServiceNow RFP, JJ's claims friction dashboard, cto/se engagement","location":"Dan's office"},
-    {"title":"CTXO Office Hours","start":"1:00 PM","end":"1:50 PM","start_iso":"2026-04-22T13:00:00-05:00","end_iso":"2026-04-22T13:50:00-05:00","description":"Zoom","location":""},
-    {"title":"GenAI Program & Use Case Demos: Open Forum","start":"1:00 PM","end":"2:00 PM","start_iso":"2026-04-22T13:00:00-05:00","end_iso":"2026-04-22T14:00:00-05:00","description":"","location":""},
-    {"title":"Bi-Monthly sync - EA + Keith Wechsler","start":"3:00 PM","end":"3:25 PM","start_iso":"2026-04-22T15:00:00-05:00","end_iso":"2026-04-22T15:25:00-05:00","description":"Zoom","location":""},
-    {"title":"Monthly 1:1 w/ Abe Capetillo","start":"3:30 PM","end":"3:55 PM","start_iso":"2026-04-22T15:30:00-05:00","end_iso":"2026-04-22T15:55:00-05:00","description":"Zoom","location":""},
-    {"title":"CTO Direct Staff | EA SLT Only","start":"4:00 PM","end":"4:30 PM","start_iso":"2026-04-22T16:00:00-05:00","end_iso":"2026-04-22T16:30:00-05:00","description":"Zoom","location":""},
-    {"title":"One Way SMS for Marketing / business partners","start":"4:30 PM","end":"4:55 PM","start_iso":"2026-04-22T16:30:00-05:00","end_iso":"2026-04-22T16:55:00-05:00","description":"","location":""}
+    {"title":"Sync up on P&C/ServiceNow next step (Pre-RFP prep)","start":"8:45 AM","end":"9:00 AM","start_iso":"2026-04-23T08:45:00-05:00","end_iso":"2026-04-23T09:00:00-05:00","description":"Zoom (USAA)","location":""},
+    {"title":"Weekly Staff - P&C CTO Leadership","start":"9:00 AM","end":"10:00 AM","start_iso":"2026-04-23T09:00:00-05:00","end_iso":"2026-04-23T10:00:00-05:00","description":"Meeting prep: list out topics and todos from last meeting with Dan Weaver, also do the same from last EASLT meeting, also last P&C IT EMG standup","location":""},
+    {"title":"PI Monthly All Hands Meeting","start":"10:00 AM","end":"10:50 AM","start_iso":"2026-04-23T10:00:00-05:00","end_iso":"2026-04-23T10:50:00-05:00","description":"Zoom (USAA)","location":""},
+    {"title":"TD Sync","start":"10:00 AM","end":"10:30 AM","start_iso":"2026-04-23T10:00:00-05:00","end_iso":"2026-04-23T10:30:00-05:00","description":"Meeting prep: issues with Tammy keeping up, TPA changes, survey needs to be filled out for PL4 - look at to-do page","location":"Marks Office"},
+    {"title":"Mark <> Steve - Intro","start":"11:00 AM","end":"11:25 AM","start_iso":"2026-04-23T11:00:00-05:00","end_iso":"2026-04-23T11:25:00-05:00","description":"Zoom (USAA)","location":""},
+    {"title":"Ryan Loker - EA Follow up - Tech Overview","start":"11:30 AM","end":"11:55 AM","start_iso":"2026-04-23T11:30:00-05:00","end_iso":"2026-04-23T11:55:00-05:00","description":"Meeting Prep: review and summarize key topics and takeaways from last meeting with Ryan Loker","location":""},
+    {"title":"Lunch / Desk Time","start":"12:00 PM","end":"1:00 PM","start_iso":"2026-04-23T12:00:00-05:00","end_iso":"2026-04-23T13:00:00-05:00","description":"","location":""},
+    {"title":"School fiesta","start":"1:00 PM","end":"3:15 PM","start_iso":"2026-04-23T13:00:00-05:00","end_iso":"2026-04-23T15:15:00-05:00","description":"Personal","location":""},
+    {"title":"Exception PER0002685: AEF Process to adhere to the PoP r...","start":"1:30 PM","end":"2:00 PM","start_iso":"2026-04-23T13:30:00-05:00","end_iso":"2026-04-23T14:00:00-05:00","description":"Zoom (USAA)","location":""}
   ],
-  "advice": "Packed 14-event day with three conflicts to resolve. 9:00-10:00 AM: Arch Forum Panel Review (9:00-10:30) overlaps with Horizontal Platform WG (9:30-10:00) -- decide which to attend live. 1:00 PM triple-stack: Dan/Mark Sync, CTXO Office Hours, and GenAI Demo Forum all collide -- Dan/Mark is the priority given Board tomorrow (Thursday). 4:00 PM: CTO Direct Staff overlaps with start of One Way SMS meeting. Bright spot: 2:00-3:00 PM is open -- use it as your Board dry-run window. Note: Board is tomorrow, Thursday April 23.",
-  "generated": "2026-04-22T06:31:00-05:00"
+  "advice": "Heavy morning, conflict-heavy 10:00 AM slot: PI Monthly All Hands (10:00-10:50) overlaps TD Sync (10:00-10:30) -- pick TD Sync given the Tammy/TPA/PL4 survey action items; catch PI recording later. 8:45 AM Pre-RFP ServiceNow sync is only 15 minutes -- protect it. School fiesta 1:00-3:15 PM collides with Exception PER0002685 at 1:30 -- delegate or reschedule the exception call. Afternoon is otherwise open; use 3:30-5:00 PM for Board-deck cleanup, TD approvals to Jeff, and the Reward Spot entries due tomorrow (April 24). No lunch meeting today -- good window for Dan/Mark follow-ups from yesterday's ServiceNow $100M conversation.",
+  "generated": "2026-04-23T06:31:00-05:00"
 }
 ;
 const EMBEDDED_TASKS = []
@@ -25,118 +20,110 @@ const EMBEDDED_PREP = {
   "success": true,
   "preps": [
     {
-      "title": "TF Standup",
-      "time": "8:00 AM CDT",
-      "instruction": "what our architects are working on, Deepak's 3 asks",
+      "title": "Weekly Staff - P&C CTO Leadership",
+      "time": "9:00 AM CDT",
+      "instruction": "list out topics and todos from last meeting with Dan Weaver, also do the same from last EASLT meeting, also last P&C IT EMG standup",
       "sections": [
         {
-          "heading": "Architect Team Status (from EA leadership 4/21)",
+          "heading": "From Dan Weaver sync 4/22",
           "items": [
-            "Morale pressure is elevated -- EMGs are 'crushing' the team; watch for TPM data accuracy slippage.",
-            "Reward Spot entries must be complete by April 24th -- push directors to finalize today.",
-            "TD backlog: Jeremy Martin's TDSR needs to move to 'Ready for Final'; Mark to send backlog approvals to Jeff today.",
-            "Jira/Dashboards access cleanup is in-flight via Alicia."
+            "ServiceNow skepticism is deep: claims cost trending $20M -> $38M, enterprise-wide potentially $100M. Goal: cap at $5M-$10M or walk.",
+            "Internal Snowflake + Beam capabilities already cover the core monitoring/observability ask -- ServiceNow is 'heavyweight bloat'.",
+            "Claims HQ building on top of Guidewire is making the architecture brittle; blocks Guidewire native R&D uptake.",
+            "Dan and Mark to coordinate on potential architect rotations (Unsworth situation) BEFORE they happen -- avoid poaching friction.",
+            "Thomas gets runway; potential Shared Services rotation if Policy reputation stays damaged.",
+            "Sync with Teddy on Vince Sanchez's AWS cost optimization AI tool (dormant environments)."
           ]
         },
         {
-          "heading": "Deepak's 3 Asks (infer from yesterday's context)",
+          "heading": "From EA SLT 4/22",
           "items": [
-            "EA Value Proposition framing for Dan Griffiths -- Dan leans Federated/Co-located model; need 'Applied Architecture' positioning.",
-            "Pulse Survey readiness -- brief the team on constructive framing.",
-            "EAMS / architecture-as-code roadmap positioning for the Dan/Mark sync at 1:00 PM."
+            "APMO renamed to APO (Association Planning Office). Debbie Brown joining with heavy PMO focus.",
+            "CTO architects now required on M3+ incident calls within their domain.",
+            "InfoSec dropping SSO requirements for low-risk suppliers (no business data shared) -- get the decision in writing including signer.",
+            "IBM information-architecture contract will NOT be renewed.",
+            "Mark standing up 'PL Forces for Technical Architecture' next Wednesday -- Slack Mark to be included.",
+            "EA Comms Workshop invite sent to leadership team -- attendance strongly encouraged."
+          ]
+        },
+        {
+          "heading": "From TF Standup 4/22 (EMG standup context)",
+          "items": [
+            "Strategy shift 'Cloud First' -> 'Fit for Purpose'. Team always thought they were Fit for Purpose -- messaging gap.",
+            "Rumors of 'killing Dynamo and Aurora' circulating without direct comms -- morale risk.",
+            "Data Center utilization 33% CPU / 34% RAM now, target 55-65%. Need historical 120% peak context.",
+            "Position Technical Architects as 'CTO of the Domain' in the Friday deck.",
+            "Deposits Build vs Buy slide: 60% custom / 40% vendor -- use to justify architect need even when buying.",
+            "Gather Andy Jameson's list of '12 Workstreams' (Dan's next year directives).",
+            "Mark considering bypassing channels to set up 30-min 1:1 with Dan -- others advise 'let the dust settle'."
+          ]
+        },
+        {
+          "heading": "Talking Points for Today",
+          "items": [
+            "Share the Board outcomes from today's session (this meeting is BEFORE the Board).",
+            "Socialize ServiceNow position and the $5M-$10M cap target.",
+            "Reinforce M3+ incident presence expectation with direct reports.",
+            "Confirm PL Forces kickoff next Wednesday and the Friday deck owners."
           ]
         }
       ]
     },
     {
-      "title": "Bi-weekly 1:1 with Deepak",
-      "time": "10:30 AM CDT",
-      "instruction": "EAMS, architecture as code, Dan Griffiths asks, products and services, TD backlog, tech acquisition workflows",
+      "title": "TD Sync",
+      "time": "10:00 AM CDT",
+      "instruction": "issues with Tammy keeping up, TPA changes, survey needs to be filled out for PL4 - look at to-do page",
       "sections": [
         {
-          "heading": "EAMS / Architecture-as-Code",
+          "heading": "Tammy Capacity Issues",
           "items": [
-            "Position as the execution mechanism for Dan Griffiths' simplification and OTOBOS mandate.",
-            "Tie to EI (Experience Intelligence) platform direction -- Kafka/Beam/Flowable/Celonis stack.",
-            "Propose a demo slot inside the upcoming Board/CTO touchpoint."
+            "Document specific symptoms (missed SLAs, dropped follow-ups, re-work). Separate signal from noise.",
+            "Decide today: redistribute, pair her with a senior, or have the formal conversation.",
+            "If redistribute, identify the 2-3 items to move and the receiving owner."
           ]
         },
         {
-          "heading": "Dan Griffiths Asks",
+          "heading": "TPA Changes",
           "items": [
-            "Dan prefers a Federated/Co-located EA model (from European banking). Frame Applied Architecture as compatible, not competing.",
-            "Microsoft Teams migration rumor -- flag as a watch item, not a decision.",
-            "Centralized vs. federated AI governance still unresolved."
+            "Identify which TPA process step is changing and who is impacted downstream.",
+            "Confirm Jeff is aware of the backlog state (from yesterday's 4/22 action to send approvals).",
+            "Decide on rollout timing so it doesn't collide with Reward Spot deadline tomorrow."
           ]
         },
         {
-          "heading": "TD Backlog + Tech Acquisition",
+          "heading": "PL4 Survey",
           "items": [
-            "Send accumulated TD approvals to Jeff today; keep Jeremy Martin's TDSR moving.",
-            "Directors invited to TD review meetings where it helps their workflow.",
-            "Tech acquisition workflow needs a written 'Permits to Build' artifact Deepak can share with Dan."
+            "Open the To-Do page and pull PL4 survey link.",
+            "Complete it during this meeting or schedule a 15-min block before EOD.",
+            "Pulse Survey (separate) is due May 5 at 10 PM CT -- flag for the whole team."
           ]
         }
       ]
     },
     {
-      "title": "EA Follow-up with Michael Lessor",
+      "title": "Ryan Loker - EA Follow up - Tech Overview",
       "time": "11:30 AM CDT",
-      "instruction": "review summary from last meeting with Michael Lessor",
+      "instruction": "review and summarize key topics and takeaways from last meeting with Ryan Loker",
       "sections": [
         {
-          "heading": "Carry-over from last Michael Lessor sync",
+          "heading": "Carry-over from last Ryan Loker sync",
           "items": [
-            "Policy Mod CTO-SCP engagement: Wiki + RACI + 'Permits to Build' framework for formal architecture sign-off.",
-            "Exception handling path when SCP teams bypass the formal review.",
-            "Socialization plan for Policy Mod SCP leads -- confirm publish date."
+            "EA Tech Overview walkthrough -- confirm which layers Ryan wanted a deeper view on.",
+            "Fit for Purpose positioning and how that lands with Ryan's team.",
+            "Applied Architecture framing that Deepak is socializing with Dan Griffiths."
           ]
         },
         {
           "heading": "Today's Talking Points",
           "items": [
-            "Status on Wiki publication and first round of Permits to Build submissions.",
-            "Ask Michael to co-sign a one-page 'Permits to Build' summary for Dan Griffiths.",
-            "Schedule next Lessor sync for early May (post-Board)."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Dan/Mark Sync",
-      "time": "1:00 PM CDT",
-      "instruction": "review past meetings in the last two weeks regarding ServiceNow, ServiceNow RFP, JJ's claims friction dashboard, cto/se engagement",
-      "sections": [
-        {
-          "heading": "ServiceNow RFP -- from 4/21 sync (key facts)",
-          "items": [
-            "RFP sync-up meeting is scheduled for April 29th with Ramnik, Suhas, and Jeff.",
-            "Sourcing wants upfront price negotiation and budget pre-approval for any project >$10M.",
-            "Ramnik has specifically tasked Mark with negotiating lower pricing and validating P&C fit.",
-            "Internal 'Experience Intelligence' (EI) platform -- Kafka + Beam + Flowable + Celonis -- already solves the same monitoring and SLO needs; POC on P&C claims data targets 4-5 week results vs ServiceNow's 8-week.",
-            "Integration concern: how ServiceNow fits with Guidewire (primary BPM for P&C) and whether its role is orchestration or just exception management."
-          ]
-        },
-        {
-          "heading": "Mark's Open Actions on ServiceNow",
-          "items": [
-            "Lead price-transparency negotiation: usage/transactional pricing model, floor vs. ceiling, behavior when an annual cap is hit.",
-            "Meet with Dan Weaver and Wes Arnold on next-step vendor engagement.",
-            "Push for an interactive technical drill-down session with ServiceNow.",
-            "Prepare a one-page 'Outcome Comparison' (5-week internal POC vs 8-week ServiceNow) for April 29th."
-          ]
-        },
-        {
-          "heading": "JJ's Claims Friction Dashboard + CTO/SE",
-          "items": [
-            "Bring current status of JJ's dashboard and how it ties to the EI POC on P&C claims data.",
-            "CTO/SE engagement: continue the Applied Architecture framing Deepak is socializing with Dan Griffiths.",
-            "Flag resource tension: EI team's pipeline is already full (ISCO, LifeCo, Bank); ServiceNow pivot would delay these."
+            "Share the ServiceNow $100M narrative and the internal Snowflake/Beam alternative.",
+            "Tease the Deposits Build-vs-Buy 60/40 frame as a template Ryan could adapt.",
+            "Identify one concrete artifact (SADD, decision, or diagram) Mark can deliver for Ryan in the next 2 weeks."
           ]
         }
       ]
     }
   ],
-  "generated": "2026-04-22T06:32:00-05:00"
+  "generated": "2026-04-23T06:32:00-05:00"
 }
 ;
