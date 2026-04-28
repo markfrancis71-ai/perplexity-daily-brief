@@ -1,28 +1,25 @@
 const EMBEDDED_CALENDAR = {
   "events": [
-    {"title":"Abe -- Adjuster 2.0 design sync (Frog input)","start":"7:30 AM","end":"8:00 AM","start_iso":"2026-04-27T07:30:00-05:00","end_iso":"2026-04-27T08:00:00-05:00","description":"Source: Gloria 4/23 -- close the loop on UI vs. prioritization debate.","location":""},
-    {"title":"JN/Mark sync on AaC","start":"8:30 AM","end":"8:55 AM","start_iso":"2026-04-27T08:30:00-05:00","end_iso":"2026-04-27T08:55:00-05:00","description":"Zoom (USAA)","location":""},
-    {"title":"Bi-weekly 1:1 w/Jonathan N","start":"9:00 AM","end":"9:25 AM","start_iso":"2026-04-27T09:00:00-05:00","end_iso":"2026-04-27T09:25:00-05:00","description":"Meeting prep: products and services, AaC","location":"EXEC SAT HO BO3W.E321"},
-    {"title":"Bi-weekly 1:1 w/Jon","start":"9:30 AM","end":"9:55 AM","start_iso":"2026-04-27T09:30:00-05:00","end_iso":"2026-04-27T09:55:00-05:00","description":"Meeting prep: health stuff, Dan Griffiths","location":""},
-    {"title":"Bi-weekly 1:1 w/Justin White","start":"11:00 AM","end":"11:25 AM","start_iso":"2026-04-27T11:00:00-05:00","end_iso":"2026-04-27T11:25:00-05:00","description":"Meeting Prep: claims research I've done over the weekend, Abe discussion","location":""},
-    {"title":"P&C IT Stand Up","start":"1:00 PM","end":"1:25 PM","start_iso":"2026-04-27T13:00:00-05:00","end_iso":"2026-04-27T13:25:00-05:00","description":"Zoom (USAA)","location":""},
-    {"title":"ServiceNow consumption model walkthrough","start":"3:00 PM","end":"3:50 PM","start_iso":"2026-04-27T15:00:00-05:00","end_iso":"2026-04-27T15:50:00-05:00","description":"Meeting prep: review sent emails for previous ServiceNow meetings and summaries","location":""},
-    {"title":"School Schedule -- Zoom meetings after 4","start":"4:00 PM","end":"5:00 PM","start_iso":"2026-04-27T16:00:00-05:00","end_iso":"2026-04-27T17:00:00-05:00","description":"USAA","location":""},
-    {"title":"USAA WAY initiative monthly","start":"5:00 PM","end":"5:05 PM","start_iso":"2026-04-27T17:00:00-05:00","end_iso":"2026-04-27T17:05:00-05:00","description":"USAA","location":""},
-    {"title":"Weekly Highlights Submissions reminder","start":"5:00 PM","end":"5:25 PM","start_iso":"2026-04-27T17:00:00-05:00","end_iso":"2026-04-27T17:25:00-05:00","description":"End of Day Reminder","location":""}
-  ],
-  "advice": "Heavy morning back-to-back from 7:30 to ~9:55: Abe (Adjuster 2.0), JN/AaC, then 1:1s with Jonathan N and Jon stacked together. Build a 5-minute reset between each by ending early. 9:55-11:00 is your prep window before Justin White at 11:00 -- protect it for the weekend claims research recap and Abe debrief. The big event today is ServiceNow consumption model walkthrough at 3:00 PM -- this is where the $5M-$10M cap conversation lands. Block 2:00-3:00 PM for prep: pull out the ServiceNow rant doc and the 4/21 RFP sync notes. 5:00 PM stack (USAA WAY + Highlights reminder) overlaps the school zoom block -- handle Highlights tonight, it's due EOD Tuesday. Reminder: open task 'Send Gloria competitor AI research' is overdue from 4/25 -- close it today.",
-  "generated": "2026-04-27T06:31:00-05:00"
+    {"title":"Architecture Huddle","start":"9:00 AM","end":"10:00 AM","start_iso":"2026-04-28T09:00:00-05:00","end_iso":"2026-04-28T10:00:00-05:00","description":"Recurring weekly EA huddle","location":""},
+    {"title":"Review Meeting on BPM platform Tech Recommendation","start":"10:00 AM","end":"10:45 AM","start_iso":"2026-04-28T10:00:00-05:00","end_iso":"2026-04-28T10:45:00-05:00","description":"BPM platform tech recommendation review","location":""},
+    {"title":"Monthly: Dialogue with Deepak","start":"11:00 AM","end":"11:50 AM","start_iso":"2026-04-28T11:00:00-05:00","end_iso":"2026-04-28T11:50:00-05:00","description":"","location":""},
+    {"title":"Monthly: Architecture Sync with Deepak Srinivasan","start":"11:00 AM","end":"11:25 AM","start_iso":"2026-04-28T11:00:00-05:00","end_iso":"2026-04-28T11:25:00-05:00","description":"","location":""},
+    {"title":"Doctor's appointment","start":"11:30 AM","end":"12:00 PM","start_iso":"2026-04-28T11:30:00-05:00","end_iso":"2026-04-28T12:00:00-05:00","description":"Personal","location":""},
+    {"title":"Bi-weekly 1:1 w/James Karras","start":"2:30 PM","end":"2:55 PM","start_iso":"2026-04-28T14:30:00-05:00","end_iso":"2026-04-28T14:55:00-05:00","description":"Meeting Prep: two way texting security issues, goal setting","location":""},
+    {"title":"Bi-weekly: Tech BoD","start":"3:05 PM","end":"4:00 PM","start_iso":"2026-04-28T15:05:00-05:00","end_iso":"2026-04-28T16:00:00-05:00","description":"Meeting prep: highlights and cross cutting themes from the last two weeks","location":""}
+]
+,
+  "advice": "Tight 11:00 AM stack: Dialogue with Deepak (11:00-11:50) and the separate Architecture Sync with Deepak Srinivasan (11:00-11:25) are scheduled at the same time, then doctor's appointment at 11:30 AM cuts in. Confirm whether the two Deepak meetings are truly separate or one was carried twice. Doctor's appointment at 11:30 AM is the immovable -- treat it as such and ask the Deepak meetings to flex. The 10:00 AM BPM Tech Recommendation review lands while you have the ServiceNow takeaways from yesterday fresh -- ServiceNow's 'horizontal platform' framing belongs in this conversation. James Karras 1:1 at 2:30 PM has prep on two-way texting security (yesterday's Rick sync covered NYDFS/MFA/PII concerns). Tech BoD at 3:05 PM needs cross-cutting themes from the last two weeks -- ServiceNow $5M-$10M cap, claims Day-in-the-Life debate, Markdown publishing lab, and Microsoft Teams migration impact. Open task overdue: 'Confirm Reward Spot entries' due tomorrow.",
+  "generated": "2026-04-28T06:31:00-05:00"
 }
 ;
 const EMBEDDED_TASKS = [
   {
-    "id": "dzZwRjMtTVpISHdlSGNZRw",
-    "title": "Send Gloria research on competitor AI usage in claims",
-    "notes": "Send Gloria research on competitor AI usage in claims",
-    "due": "2026-04-25T00:00:00.000Z",
-    "status": "needsAction",
-    "webViewLink": "https://tasks.google.com/task/w6pF3-MZHHweHcYG?sa=6"
+    "id": "Y29uZmlybVJld2FyZFNwb3RfMDQyOQ",
+    "title": "Confirm Reward Spot entries went in for the team",
+    "notes": "Carry-over from 4/24 deadline check",
+    "due": "2026-04-29T00:00:00.000Z",
+    "status": "needsAction"
   }
 ]
 ;
@@ -30,116 +27,76 @@ const EMBEDDED_PREP = {
   "success": true,
   "preps": [
     {
-      "title": "Bi-weekly 1:1 w/Jonathan N",
-      "time": "9:00 AM CDT",
-      "instruction": "products and services, AaC",
+      "title": "Bi-weekly 1:1 w/James Karras",
+      "time": "2:30 PM CDT",
+      "instruction": "two way texting security issues, goal setting",
       "sections": [
         {
-          "heading": "Products & Services (Phase 2)",
+          "heading": "Two-Way SMS Security (from Rick 4/27 sync)",
           "items": [
-            "Service-by-service rationalization sessions kicking off Friday this week (per Deepak 4/22). Goal: define value, inputs, outputs.",
-            "Jira capacity model -- map architect time against the defined service chunks (Q2 finish target: end of June).",
-            "Status reports must show concrete deliverables, not consulting activities. Reinforce with Jonathan."
+            "New CISO Dan is taking a much harder line on security than predecessor -- legal and security mandating MFA for any inbound data via SMS.",
+            "NYDFS 2025 ruling could set the industry standard for 2025-2026 stricter PII handling.",
+            "Even using a member's name in a text could be considered a PII breach -- adjusters currently rely on manual judgment.",
+            "Hi Marley lacks robust outbound DLP, putting security burden on the carrier.",
+            "Octa to Entra ID migration is mandatory and will require significant refactoring for non-member account creation.",
+            "RCS (Rich Communication Services) is the longer-term secure path; Twilio/AWS Connect demos showed integration but auth is the missing link."
           ]
         },
         {
-          "heading": "Architecture-as-Code (AaC) and EAMS",
+          "heading": "Two-Way SMS Talking Points for James",
           "items": [
-            "Position EAMS / AaC as the execution mechanism for Dan Griffiths' simplification and OTOBOS mandate.",
-            "Tie to EI platform direction (Kafka/Beam/Flowable/Celonis) -- same plumbing under both.",
-            "Confirm with Jonathan whether his team has bandwidth for an AaC POC in Q2 or if it slips to Q3."
+            "Plan to set up Corey Newsom outreach (per yesterday's Justin sync) -- propose James be on that loop.",
+            "How does this affect James' DNS / Digital Claims roadmap? CCOM retirement timeline may need to slip.",
+            "Audit current SMS data points before Dan's hard line takes effect -- need a working list of 'violations' under new policy."
+          ]
+        },
+        {
+          "heading": "Goal Setting",
+          "items": [
+            "Mark has a 'red exclamation mark' in Workday (per Praveena 4/27) -- finalize formal goals replacing generic IVA language with specific project 'big rocks'.",
+            "Big rocks under consideration: ServiceNow consumption model decision, Adjuster 2.0 / Claims notification redesign, Architecture-as-Code rollout, AI governance memo, EI platform POC milestones, SMS security migration.",
+            "Friday absence noted (per Praveena) -- 15-min blocks needed with Mike and Jonathan to clear goal-setting backlog before then."
           ]
         }
       ]
     },
     {
-      "title": "Bi-weekly 1:1 w/Jon",
-      "time": "9:30 AM CDT",
-      "instruction": "health stuff, Dan Griffiths",
+      "title": "Bi-weekly: Tech BoD",
+      "time": "3:05 PM CDT",
+      "instruction": "highlights and cross cutting themes from the last two weeks",
       "sections": [
         {
-          "heading": "Health stuff",
+          "heading": "Highlights from the Past Two Weeks",
           "items": [
-            "Personal item -- handle privately."
+            "ServiceNow 6-week Claims Payment POC closed successfully (4/27) using real Kafka stream data; integration with GuideWire and SAP demonstrated; GenAI for case summarization validated.",
+            "ServiceNow consumption model concerns aired: cost trajectory $20M -> $38M for claims, potentially $100M enterprise-wide; cap target $5M-$10M.",
+            "Decision pending on whether ServiceNow replaces Celonis (process mining) and Aris (BPM) -- the 'consolidation savings' that could justify the price tag.",
+            "Adjuster 2.0 / Claims notification reset: shift from 500+ activity types toward iOS-style alert/badge model. 73 activities retired, 200+ target by year-end.",
+            "Two-way SMS pilot threatened by new CISO security stance and potential NYDFS rules -- could blow up Hi Marley plan.",
+            "Architecture three-tier framework (Business, Architecture, Specification) milestone reached; pressure-testing with Jonathan Stewart and Mike Lester."
           ]
         },
         {
-          "heading": "Dan Griffiths positioning",
+          "heading": "Cross-Cutting Themes",
           "items": [
-            "Dan leans Federated/Co-located EA model. Frame Applied Architecture as compatible, not competing.",
-            "Dan questioning ~80 architect headcount and 'bloat' -- Mark + Pravina building coverage heat map.",
-            "MI3+ incident expectation: domain architects on the call, copy Mark + Pravina with 10-min attendance confirmations.",
-            "Dan's 'Tier 1 Project List' -- ask Jon if Ryan or Andy Kenneth has visibility."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Bi-weekly 1:1 w/Justin White",
-      "time": "11:00 AM CDT",
-      "instruction": "claims research I've done over the weekend, Abe discussion",
-      "sections": [
-        {
-          "heading": "Weekend Claims Research Recap",
-          "items": [
-            "Bring the synthesized notes from your weekend research session.",
-            "Tie back to the Claims 26-30 roadmap (Ryan Loker 4/23): Guideware screen rework, Push to Debit, BPM onboarding, Service Power, Hi Marley two-way, Visual Voicemail, Gen AI use cases.",
-            "Payment authority bottleneck (14+ approvals on a single payment) -- raise as a candidate Justin can champion."
+            "Run vs. Innovation cost separation: Dan pushing testing costs from 10% to 7.5% of code spend; other LoBs asking for the framework.",
+            "Microsoft Teams migration tooling shift causing 'swirl' -- inventorying automated Slack notifications now.",
+            "Claims design churn: business leaders acting as designers, leading to 'firing-offence' levels of rework -- need scope-freeze discipline.",
+            "AI strategy maturing along three pillars: Automated FNOL, Loss Prevention via IOT/telematics, Adjuster Co-pilot via Pro Navigator.",
+            "Career advancements (formerly 'promotions') execute this weekend; ED recruitment in final stages."
           ]
         },
         {
-          "heading": "Abe / Adjuster 2.0 Debrief",
+          "heading": "Asks / Decisions Needed",
           "items": [
-            "Today's 7:30 AM Abe sync closes the loop on the UI vs. prioritization debate from Gloria 4/23.",
-            "Outcome to share with Justin: did Frog input land? Is Adjuster 2.0 a UI rework or a notification-prioritization play?",
-            "Justin is Acting Principal Architect for Claims -- he should own the next architecture decision record."
-          ]
-        },
-        {
-          "heading": "Coordination Items",
-          "items": [
-            "Khyber vs. Iris MDcom evaluation (from Steve Harrison intro 4/23) -- Justin should be in the loop.",
-            "Quarterly sync cadence between Claims Ops and Architecture -- propose to Justin and confirm calendar.",
-            "Prompt Engineering for Adjusters workshop -- Justin to co-host?"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "ServiceNow consumption model walkthrough",
-      "time": "3:00 PM CDT",
-      "instruction": "review sent emails for previous ServiceNow meetings and summaries",
-      "sections": [
-        {
-          "heading": "Active ServiceNow Position (from 4/21 RFP sync + Dan Weaver 4/22)",
-          "items": [
-            "Cost trajectory: Claims at $20M -> $38M, enterprise-wide potentially $100M+. Negotiation goal: cap at $5M-$10M or walk.",
-            "Sourcing requires budget pre-approval for any project >$10M. RFP sync-up scheduled April 29 with Ramnik, Suhas, Jeff.",
-            "Internal alternative: Experience Intelligence platform (Kafka + Beam + Flowable + Celonis) projects 4-5 week results vs ServiceNow's 8-week.",
-            "Ramnik tasked Mark specifically with price-transparency negotiation and P&C fit validation."
-          ]
-        },
-        {
-          "heading": "Consumption Model Questions to Test",
-          "items": [
-            "Per-transaction pricing model: floor and ceiling, behavior when annual cap is hit (overage rates, soft vs hard caps).",
-            "How does consumption count -- raw events, billable workflows, automation invocations, or seats?",
-            "Integration cost with Guidewire (primary BPM for P&C) -- orchestration vs. pure exception management.",
-            "Token / AI metering: are agentic features metered separately from base consumption?"
-          ]
-        },
-        {
-          "heading": "Talking Points",
-          "items": [
-            "Open with the 4-5 week internal POC outcome comparison if any data has come in.",
-            "Probe for any volume tier discounts that could land USAA in the $5M-$10M corridor.",
-            "Flag the Aurora/Dynamo signaling and Dan's 'Cloud First -> Fit for Purpose' shift -- ServiceNow needs to land on the Fit for Purpose side.",
-            "Prepare to walk if the consumption model still trends toward $100M at full enterprise scope."
+            "Endorsement on the ServiceNow $5M-$10M cap negotiation framing.",
+            "Awareness on the SMS security blocker so it doesn't surface as a surprise at Tech BoD.",
+            "Visibility into the Tier 1 Project List from Dan -- ask Ryan or Andy Kenneth for access."
           ]
         }
       ]
     }
   ],
-  "generated": "2026-04-27T06:32:00-05:00"
+  "generated": "2026-04-28T06:32:00-05:00"
 }
 ;
