@@ -1,192 +1,89 @@
 const EMBEDDED_CALENDAR = {
   "events": [
-    {"title":"TF Standup","start":"8:00 AM","end":"9:00 AM","start_iso":"2026-04-29T08:00:00-05:00","end_iso":"2026-04-29T09:00:00-05:00","description":"Meeting prep: resiliency granularity, ask Jon about the Jeff Kennedy resiliency work","location":""},
-    {"title":"Arch Forum Panel Review Meeting","start":"9:00 AM","end":"10:30 AM","start_iso":"2026-04-29T09:00:00-05:00","end_iso":"2026-04-29T10:30:00-05:00","description":"Recurring panel review","location":""},
-    {"title":"Interview - Ravikanth Chavali R0114993","start":"10:30 AM","end":"12:00 PM","start_iso":"2026-04-29T10:30:00-05:00","end_iso":"2026-04-29T12:00:00-05:00","description":"Solution Architect candidate interview","location":""},
-    {"title":"SAT Food Truck Mixer","start":"11:00 AM","end":"2:00 PM","start_iso":"2026-04-29T11:00:00-05:00","end_iso":"2026-04-29T14:00:00-05:00","description":"Office event","location":""},
-    {"title":"Monthly: Architecture Sync with Deepak Srinivasan","start":"1:30 PM","end":"1:55 PM","start_iso":"2026-04-29T13:30:00-05:00","end_iso":"2026-04-29T13:55:00-05:00","description":"Meeting Prep: ask about 15 million dollar telematics pilot, ai work, PCS update","location":""},
-    {"title":"Weekly: Horizontal Platform WG","start":"2:00 PM","end":"2:30 PM","start_iso":"2026-04-29T14:00:00-05:00","end_iso":"2026-04-29T14:30:00-05:00","description":"Meeting prep: review ServiceNow themes from the past week","location":""},
-    {"title":"EA Follow-up with Michael Lessor","start":"2:30 PM","end":"2:55 PM","start_iso":"2026-04-29T14:30:00-05:00","end_iso":"2026-04-29T14:55:00-05:00","description":"Meeting prep: list out summary and takeaways from last couple of meetings with Michael Lessor","location":""},
-    {"title":"PL4s for Technology Architecture","start":"3:00 PM","end":"4:00 PM","start_iso":"2026-04-29T15:00:00-05:00","end_iso":"2026-04-29T16:00:00-05:00","description":"PL4 review session","location":""},
-    {"title":"EA All People Leader Meeting (Monthly)","start":"4:00 PM","end":"4:50 PM","start_iso":"2026-04-29T16:00:00-05:00","end_iso":"2026-04-29T16:50:00-05:00","description":"Meeting prep: summarize key themes over the past 2 weeks","location":""}
+    {"title":"Claims HQ & Comms UI demo","start":"9:30 AM","end":"10:00 AM","start_iso":"2026-04-30T09:30:00-05:00","end_iso":"2026-04-30T10:00:00-05:00","description":"Jenna scheduling visualization demo per Sarah Hudson 4/27","location":""},
+    {"title":"Bi-weekly 1:1 w/Randy Burris","start":"9:30 AM","end":"9:55 AM","start_iso":"2026-04-30T09:30:00-05:00","end_iso":"2026-04-30T09:55:00-05:00","description":"Recurring 1:1","location":""},
+    {"title":"Portfolio & Principal Architect Forum","start":"10:00 AM","end":"11:00 AM","start_iso":"2026-04-30T10:00:00-05:00","end_iso":"2026-04-30T11:00:00-05:00","description":"Recurring forum","location":""},
+    {"title":"TD Sync","start":"10:00 AM","end":"10:30 AM","start_iso":"2026-04-30T10:00:00-05:00","end_iso":"2026-04-30T10:30:00-05:00","description":"Recurring TD sync","location":""},
+    {"title":"Weekly Staff – P&C CTO Leadership","start":"11:00 AM","end":"12:00 PM","start_iso":"2026-04-30T11:00:00-05:00","end_iso":"2026-04-30T12:00:00-05:00","description":"Meeting prep: takeaways from Deepak's full staff; cross cutting themes over the past week; do pulse survey","location":""},
+    {"title":"Interview with Manoj Jacob - R0114993","start":"1:00 PM","end":"2:30 PM","start_iso":"2026-04-30T13:00:00-05:00","end_iso":"2026-04-30T14:30:00-05:00","description":"Solutions Engineer candidate interview","location":""},
+    {"title":"Bi-Monthly sync with EA - Sarah Cook","start":"2:30 PM","end":"2:55 PM","start_iso":"2026-04-30T14:30:00-05:00","end_iso":"2026-04-30T14:55:00-05:00","description":"Meeting prep: review notes from last meeting with Sarah Cook; Drips and marketing sms update","location":""},
+    {"title":"EA Communications Workshop","start":"3:00 PM","end":"4:00 PM","start_iso":"2026-04-30T15:00:00-05:00","end_iso":"2026-04-30T16:00:00-05:00","description":"Placeholder","location":""}
   ],
-  "advice": "Heavy back-to-back from 8:00 AM through 4:50 PM with multiple conflicts. Critical: 10:30-12:00 Ravikanth Chavali interview is the immovable; SAT Food Truck Mixer (11-2) overlaps it -- skip the mixer or stop by briefly only after the interview. Triple stack 1:30-3:00: Deepak Architecture Sync (1:30-1:55), Horizontal Platform WG (2:00-2:30), Michael Lessor (2:30-2:55) -- end each on time, no buffers. Deepak prep: bring telematics pilot question ($15M), AI work, PCS update; Horizontal Platform WG prep: pull ServiceNow themes from past week (yesterday's 4/28 BPM/RFP discussion is the source). Michael Lessor: review takeaways from last 2 syncs. PL4 review at 3:00 PM and EA All People Leader at 4:00 PM close the day -- summarize 2-week themes for the leader meeting (Tech BoD, ServiceNow, James Karras, Resiliency, Deepak AMA, Arch huddle MCP rollout). 4 open tasks today including 'Confirm Reward Spot' (due TODAY) and three Friday-due follow-ups from Justin and Jonathan.",
-  "generated": "2026-04-29T06:31:00-05:00"
+  "advice": "Two morning conflicts to resolve. 9:30 AM Claims HQ demo overlaps the Randy Burris 1:1 -- the demo is the rarer asset (Jenna scheduling), so reschedule Randy to next week. 10:00 AM Portfolio & Principal Architect Forum overlaps TD Sync -- pick the Forum given the architect-value/Architecture Day momentum from yesterday's TF standup; catch TD Sync recap from Tammy. 11:00 Weekly Staff is the day's anchor -- prep card synthesizes Deepak's full staff takeaways and cross-cutting themes; reminder also: do the Pulse Survey before May 5. Interview at 1:00 PM is 90 minutes -- block 12:30 PM for review of Manoj's resume. Sarah Cook 2:30 PM has prep on Drips/marketing SMS update. EA Comms Workshop at 3:00 PM is a placeholder; confirm whether it's still on. 3 active tasks all due TODAY: Datadog/Scan AI/Whatfix tool overlap, Opterics homework, and architecture documentation deep dive (overdue Reward Spot from yesterday should already be closed).",
+  "generated": "2026-04-30T06:32:00-05:00"
 }
 ;
 const EMBEDDED_TASKS = [
-  {
-    "title": "Confirm Reward Spot entries went in for the team",
-    "due": "2026-04-29T00:00:00.000Z",
-    "status": "needsAction",
-    "notes": "DUE TODAY"
-  },
-  {
-    "title": "Resolve Datadog/Scan AI/Whatfix tool overlap -- 30-min ratio",
-    "due": "2026-04-30T00:00:00.000Z",
-    "status": "needsAction",
-    "notes": "From Justin White 4/27"
-  },
-  {
-    "title": "[Mark] Share Opterics homework with Adam for sniff test",
-    "due": "2026-04-30T00:00:00.000Z",
-    "status": "needsAction",
-    "notes": "From Jonathan 4/27 -- before involving John"
-  },
-  {
-    "title": "[Mark] Deep dive review of architecture documentation today",
-    "due": "2026-04-30T00:00:00.000Z",
-    "status": "needsAction",
-    "notes": "Slack link from Jonathan 4/27"
-  }
+  {"title":"Resolve Datadog/Scan AI/Whatfix tool overlap -- 30-min ratio","due":"2026-04-30T00:00:00.000Z","status":"needsAction","notes":"DUE TODAY"},
+  {"title":"[Mark] Share Opterics homework with Adam for sniff test","due":"2026-04-30T00:00:00.000Z","status":"needsAction","notes":"DUE TODAY -- before involving John"},
+  {"title":"[Mark] Deep dive review of architecture documentation","due":"2026-04-30T00:00:00.000Z","status":"needsAction","notes":"DUE TODAY -- Slack link from Jonathan 4/27"},
+  {"title":"Confirm Reward Spot entries went in for the team","due":"2026-04-29T00:00:00.000Z","status":"needsAction","notes":"OVERDUE from 4/29"}
 ]
 ;
 const EMBEDDED_PREP = {
   "success": true,
   "preps": [
     {
-      "title": "TF Standup",
-      "time": "8:00 AM CDT",
-      "instruction": "resiliency granularity, ask Jon about the Jeff Kennedy resiliency work",
+      "title": "Weekly Staff - P&C CTO Leadership",
+      "time": "11:00 AM CDT",
+      "instruction": "takeaways from Deepak's full staff; cross cutting themes over the past week; do pulse survey",
       "sections": [
         {
-          "heading": "From Resiliency / Dan Mascorro 4/28",
+          "heading": "Takeaways from Deepak Full Staff 4/29",
           "items": [
-            "The 15-minute RTO from Jeff Kennedy's prior analysis is widely viewed as impractical -- team pivoting to 'real-world' resiliency conversations.",
-            "Push to manage resiliency at the process or experience level rather than per-application.",
-            "John Fisher (Point), Justin (Claims), and Thomas Wiedemeyer (Policy) driving the technical analysis.",
-            "Need to align with Faith's team (PNC business process criticality) and update Fusion with attainable data."
+            "Project Leapfrog / CMT Telematics: $14M POC under heavy scrutiny -- CEO Bill Powers reportedly went around channels to align directly with Wayne Peacock on pricing. 30-day bail-out clause being added to the SOW.",
+            "Archetype AI surfaced as fallback to CMT -- physics-based modeling that could span Home, Flume, etc. for a fuller member fingerprint.",
+            "Renters platform sales gap: PCS/demos performing well, zero policy sales in field. Coordination with Tiffany needed.",
+            "Power Sports (formerly Motorcycle) and Home/Auto warranty are next launches.",
+            "Personnel: Ronnig departure noted blunt; rumors on Tina Craig. Team in 'survivor mode' -- stay productive, stay under the radar."
           ]
         },
         {
-          "heading": "From Dialogue with Deepak 4/28",
+          "heading": "Cross-Cutting Themes (Past Week)",
           "items": [
-            "160-170 applications backlogged in 'pilot' status because resiliency testing isn't complete.",
-            "Mark expected to take more accountability driving resiliency completion alongside OsterCam and Hermann.",
-            "Gap between NFR policy and SDLC implementation -- CIO concern.",
-            "Q3 priority: PAM stack automation to replace manual mapping."
+            "Solo.io Enterprise Agent Gateway selected as centralized AI/MCP traffic control point. Three deployments in flight: Egress, Internal, dedicated MCP cluster on OpenShift.",
+            "ForgeRock to Microsoft Entra identity migration imminent (9-month target) -- impacts agent identity model.",
+            "Bank Pod: 'Cloud First / Fit for Purpose' standard with teeth on AWS. Tim director-level pushback being managed.",
+            "Architecture Day debate: shift from 'Dog and Pony' showcases to half-day in-person 'Hard Discussion' sessions.",
+            "Resiliency: 160+ apps in pilot, 15-min RTO retired, shift to experience-level criticality with Faith's team.",
+            "ServiceNow consumption model under fire ($13M+ tokens for limited scope); $5M-$10M cap target, RFP scoping continues."
           ]
         },
         {
-          "heading": "Today's Asks",
+          "heading": "Pulse Survey",
           "items": [
-            "Ask Jon for the latest Jeff Kennedy resiliency analysis spreadsheet.",
-            "Get a status check on the 160+ pilot-status apps.",
-            "Confirm John Fisher is ready for the Faith's-team sync."
+            "Closes May 5 at 10 PM CT.",
+            "Reminder for the team during today's staff.",
+            "Mark to complete personally if not done."
           ]
         }
       ]
     },
     {
-      "title": "Architecture Sync with Deepak Srinivasan",
-      "time": "1:30 PM CDT",
-      "instruction": "ask about 15 million dollar telematics pilot, ai work, PCS update",
-      "sections": [
-        {
-          "heading": "$15M Telematics Pilot",
-          "items": [
-            "Mentioned in the James Karras 4/28 sync as a 'final tech decision' that Suhas should not be blindsided on.",
-            "Confirm whether Deepak knows the funding source and the IOT/Loss-Prevention pillar tie-in (Justin's three-pillar framing: Automated FNOL / Loss Prevention / Adjuster Co-pilot).",
-            "Position as part of the AI strategy story to Dan Griffiths."
-          ]
-        },
-        {
-          "heading": "AI Work",
-          "items": [
-            "Agent Assist POC (AWS) launching with limited MSR set -- single vendor for business validation.",
-            "IBM/WatsonX $2M investment stalled (cannot move to production).",
-            "ServiceNow consumption model still under fire ($13M tokens for small scope per yesterday's RFP discussion).",
-            "Tech Strategy publication paused for new CIO review before May Board."
-          ]
-        },
-        {
-          "heading": "PCS Update",
-          "items": [
-            "Confirm PCS Hub coverage status and any open items from the end-of-April commitment.",
-            "Request status on Architecture Day scheduling adjustment for the new CIO."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Weekly Horizontal Platform WG",
-      "time": "2:00 PM CDT",
-      "instruction": "review ServiceNow themes from the past week",
-      "sections": [
-        {
-          "heading": "Themes from past week (drawn from 4/27 contract review and 4/28 RFP discussion)",
-          "items": [
-            "Consumption-based pricing trending $13M+ for limited scope. Dan and Mark target: cap $5M-$10M or walk.",
-            "Closed platform concern -- ServiceNow does not adhere to BPMN/CMMN standards.",
-            "Senior leadership pressure: ServiceNow described as 'zombie that won't die' in some circles.",
-            "Internal alternatives: optimize existing Guidewire vs. extend Flowable + Beam + Celonis EI platform.",
-            "Top 6 critical transactions identification still outstanding -- Mark owns.",
-            "ServiceNow could replace Celonis and Aris if consolidation savings justify -- Stay/Go analysis pending."
-          ]
-        },
-        {
-          "heading": "WG Discussion Targets",
-          "items": [
-            "Volume data needed for Pay-a-Bill, Correspondence, and other non-claim P&C transactions.",
-            "Side-by-side comparison framework: Guidewire optimization vs. internal Flowable build vs. ServiceNow.",
-            "Define 'success' criteria before Tuesday's RFP working session."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "EA Follow-up with Michael Lessor",
+      "title": "Bi-Monthly sync with EA - Sarah Cook",
       "time": "2:30 PM CDT",
-      "instruction": "list out summary and takeaways from last couple of meetings with Michael Lessor",
+      "instruction": "review notes from last meeting with Sarah Cook; Drips and marketing sms update",
       "sections": [
         {
-          "heading": "Carry-over from prior Lessor syncs",
+          "heading": "Drips / Marketing SMS Update",
           "items": [
-            "Policy Mod CTO-SCP engagement: Wiki + RACI + 'Permits to Build' framework.",
-            "Exception handling path when SCP teams bypass formal review.",
-            "Socialization plan for Policy Mod SCP leads -- publish-date confirmation pending.",
-            "Action remained open: co-sign a one-page 'Permits to Build' summary for Dan Griffiths."
+            "Drips decommission tied to the 4/22 Salesforce Mobile Connect decision for one-way marketing SMS. 3-month carrier shortcode approval is the gating item.",
+            "TCPA risk drove keeping marketing and operational traffic distinct; June 2026 PLN review will revisit long-term merge.",
+            "Hi Marley two-way pilot status separate -- now under heavy CISO/NYDFS pressure (4/27 Rick sync).",
+            "Pull data portability concern forward -- avoid Salesforce lock-in on shortcodes and audience data."
           ]
         },
         {
-          "heading": "Today's Talking Points",
+          "heading": "Carry-over Items from Last Sarah Cook Sync",
           "items": [
-            "Status on Wiki publication and the first Permits to Build submissions.",
-            "Tie EA value proposition to Dan Griffiths' resiliency/NFR implementation gap (from Deepak AMA 4/28).",
-            "Schedule next sync for mid-May (after Tech Strategy publication post-Board)."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "EA All People Leader Meeting",
-      "time": "4:00 PM CDT",
-      "instruction": "summarize key themes over the past 2 weeks",
-      "sections": [
-        {
-          "heading": "Two-Week Themes",
-          "items": [
-            "ServiceNow: POC closed (4/27), consumption model under fire, $5M-$10M cap negotiation, RFP scoping.",
-            "Resiliency: 160+ apps in pilot, 15-minute RTO debate, shift to experience-level ownership.",
-            "Tech BoD 4/28: PNC data product strategy (37 products / 10 domains), Pub/Sub model failure, double-bubble cloud cost.",
-            "Architecture: TPA retired, MCP server registry rolling out (September 2026 enforcement), three-tier framework milestone reached.",
-            "AI: Agent Assist AWS POC launched, three-pillar framing (FNOL / Loss Prevention / Co-pilot), IBM WatsonX stalled.",
-            "Claims: Activities burndown (73 retired, 200+ target), Adjuster 2.0 notification reset, Khyber vs Iris evaluation.",
-            "SMS: Hi Marley plan threatened by new CISO/NYDFS hard line; RCS as longer-term path.",
-            "People: New CIO Tech Strategy publication paused, EA centralized model reaffirmed, Pulse Survey closes May 5."
-          ]
-        },
-        {
-          "heading": "Asks for Team",
-          "items": [
-            "Pulse Survey participation by May 5 (10 PM CT).",
-            "MCP server registry submissions before September enforcement.",
-            "Identify 'soup-to-nuts' initiatives architects can own end-to-end."
+            "Confirm what action items closed since the last sync.",
+            "Update Sarah on the May 1 ATC/NBA vendor decision context.",
+            "Briefly cover ServiceNow $5M-$10M cap negotiation if relevant to her scope."
           ]
         }
       ]
     }
   ],
-  "generated": "2026-04-29T06:32:00-05:00"
+  "generated": "2026-04-30T06:32:00-05:00"
 }
 ;
